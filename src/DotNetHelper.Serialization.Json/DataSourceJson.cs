@@ -20,6 +20,7 @@ namespace DotNetHelper.Serialization.Json
         public T Deserialize<T>(string content) where T : class
         {
             throw new NotImplementedException();
+
         }
 
         public T Deserialize<T>(Stream stream) where T : class
