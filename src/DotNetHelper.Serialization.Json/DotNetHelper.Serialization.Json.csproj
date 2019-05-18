@@ -11,7 +11,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="DotNetHelper.Serialization.Abstractions" Version="1.0.3" />
+    <Compile Remove="DataSourceXml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DotNetHelper.Serialization.Abstractions" Version="1.0.5" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
     <PackageReference Include="Microsoft.CSharp" Version="4.6.0-preview5.19224.8" />
   </ItemGroup>

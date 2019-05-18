@@ -12,13 +12,13 @@ namespace DotNetHelper.Serialization.Json.Tests
 {
     [TestFixture]
     [NonParallelizable] //since were sharing a single file across multiple test cases we don't want Parallelizable
-    public class JsonSerializerTextFixture 
+    public class JsonDeserializerTextFixture 
     {
         
 
         public DataSourceJson DataSource { get; set; } = new DataSourceJson();
 
-        public JsonSerializerTextFixture()
+        public JsonDeserializerTextFixture()
         {
 
         }
@@ -52,24 +52,34 @@ namespace DotNetHelper.Serialization.Json.Tests
 
         [Author("Joseph McNeal Jr", "josephmcnealjr@gmail.com")]
         [Test]
-        public void Test_DeserializeJsonToDynamic()
+        public void Test_Deserialize_Json_To_Dynamic()
         {
             var dyn = DataSource.Deserialize(MockData.EmployeeAsJson);
             EnsureDynamicObjectMatchMockData(dyn);
         }
         [Author("Joseph McNeal Jr", "josephmcnealjr@gmail.com")]
         [Test]
-        public void Test_DeserializeStreamToDynamic()
+        public void Test_Deserialize_Stream_To_Dynamic_And_Stream_Is_Dispose()
         {
             var stream = MockData.GetEmployeeAsStream(DataSource.Encoding);
             var dyn = DataSource.Deserialize(stream);
             EnsureDynamicObjectMatchMockData(dyn);
+            EnsureStreamIsDispose(stream);
+        }
+        [Author("Joseph McNeal Jr", "josephmcnealjr@gmail.com")]
+        [Test]
+        public void Test_Deserialize_Stream_To_Dynamic_And_Stream_Wont_Dispose()
+        {
+            var stream = MockData.GetEmployeeAsStream(DataSource.Encoding);
+            var dyn = DataSource.Deserialize(stream,1024,true);
+            EnsureDynamicObjectMatchMockData(dyn);
+            EnsureStreamIsNotDisposeAndIsAtEndOfStream(stream);
         }
 
 
         [Author("Joseph McNeal Jr", "josephmcnealjr@gmail.com")]
         [Test]
-        public void Test_DeserializeJsonToGeneric()
+        public void Test_Deserialize_Json_To_Generic()
         {
             var employee = DataSource.Deserialize<Employee>(MockData.EmployeeAsJson);
             EnsureGenericObjectMatchMockData(employee);
@@ -77,16 +87,30 @@ namespace DotNetHelper.Serialization.Json.Tests
 
         [Author("Joseph McNeal Jr", "josephmcnealjr@gmail.com")]
         [Test]
-        public void Test_DeserializeStreamToGeneric()
+        public void Test_Deserialize_Stream_To_Generic_And_Stream_Is_Dispose()
         {
             var stream = MockData.GetEmployeeAsStream(DataSource.Encoding);
             var dyn = DataSource.Deserialize<Employee>(stream);
             EnsureGenericObjectMatchMockData(dyn);
+            EnsureStreamIsDispose(stream);
+
         }
 
         [Author("Joseph McNeal Jr", "josephmcnealjr@gmail.com")]
         [Test]
-        public void Test_DeserializeJsonStringToTypedObject()
+        public void Test_Deserialize_Stream_To_Generic()
+        {
+            var stream = MockData.GetEmployeeAsStream(DataSource.Encoding);
+            var dyn = DataSource.Deserialize<Employee>(stream,1024,true);
+            EnsureGenericObjectMatchMockData(dyn);
+            EnsureStreamIsNotDisposeAndIsAtEndOfStream(stream);
+
+        }
+
+
+        [Author("Joseph McNeal Jr", "josephmcnealjr@gmail.com")]
+        [Test]
+        public void Test_Deserialize_Json_To_Typed_Object()
         {
             var employee = DataSource.Deserialize(MockData.EmployeeAsJson, typeof(Employee));
             dynamic dyn = employee;
@@ -95,17 +119,32 @@ namespace DotNetHelper.Serialization.Json.Tests
 
         [Author("Joseph McNeal Jr", "josephmcnealjr@gmail.com")]
         [Test]
-        public void Test_DeserializeStreamToTypedObject()
+        public void Test_Deserialize_Stream_To_Typed_Object_And_Stream_Is_Dispose()
         {
             var stream = MockData.GetEmployeeAsStream(DataSource.Encoding);
             var employee = DataSource.Deserialize(stream, typeof(Employee));
             dynamic dyn = employee;
             EnsureFirstNameAndLastNameMatchMockData(dyn.FirstName.ToString(), dyn.LastName.ToString());
+            EnsureStreamIsDispose(stream);
         }
+        [Author("Joseph McNeal Jr", "josephmcnealjr@gmail.com")]
+        [Test]
+        public void Test_Deserialize_Stream_To_Typed_Object_And_Stream_Wont_Dispose()
+        {
+            var stream = MockData.GetEmployeeAsStream(DataSource.Encoding);
+            var employee = DataSource.Deserialize(stream, typeof(Employee),1024,true);
+            dynamic dyn = employee;
+            EnsureFirstNameAndLastNameMatchMockData(dyn.FirstName.ToString(), dyn.LastName.ToString());
+            EnsureStreamIsNotDisposeAndIsAtEndOfStream(stream);
+        }
+
+  
+
+
 
         [Author("Joseph McNeal Jr", "josephmcnealjr@gmail.com")]
         [Test]
-        public void Test_DeserializeJsonToListDynamic()
+        public void Test_Deserialize_Json_To_Dynamic_List()
         {
             var employees = DataSource.DeserializeToList(MockData.EmployeeAsJsonList);
             EnsureFirstNameAndLastNameMatchMockData(employees.First().FirstName.ToString(), employees.First().LastName.ToString());
@@ -113,16 +152,27 @@ namespace DotNetHelper.Serialization.Json.Tests
 
         [Author("Joseph McNeal Jr", "josephmcnealjr@gmail.com")]
         [Test]
-        public void Test_DeserializeStreamToDynamicList()
+        public void Test_Deserialize_Stream_To_Dynamic_List_And_Stream_Is_Dispose()
         {
             var stream = MockData.GetEmployeeListAsStream(DataSource.Encoding);
             var dyn = DataSource.DeserializeToList(stream);
             EnsureDynamicObjectMatchMockData(dyn.First());
+            EnsureStreamIsDispose(stream);
         }
 
         [Author("Joseph McNeal Jr", "josephmcnealjr@gmail.com")]
         [Test]
-        public void Test_DeserializeJsonToGenericList()
+        public void Test_Deserialize_Stream_To_Dynamic_List_And_Stream_Wont_Dispose()
+        {
+            var stream = MockData.GetEmployeeListAsStream(DataSource.Encoding);
+            var dyn = DataSource.DeserializeToList(stream,1024,true);
+            EnsureDynamicObjectMatchMockData(dyn.First());
+            EnsureStreamIsNotDisposeAndIsAtEndOfStream(stream);
+        }
+
+        [Author("Joseph McNeal Jr", "josephmcnealjr@gmail.com")]
+        [Test]
+        public void Test_Deserialize_Json_To_Generic_List()
         {
             var employees = DataSource.DeserializeToList<Employee>(MockData.EmployeeAsJsonList);
             EnsureGenericObjectMatchMockData(employees.First());
@@ -130,29 +180,50 @@ namespace DotNetHelper.Serialization.Json.Tests
 
         [Author("Joseph McNeal Jr", "josephmcnealjr@gmail.com")]
         [Test]
-        public void Test_DeserializeStreamToGenericList()
+        public void Test_Deserialize_Stream_To_Generic_List_And_Stream_Is_Dispose()
         {
             var stream = MockData.GetEmployeeListAsStream(DataSource.Encoding);
             var dyn = DataSource.DeserializeToList<Employee>(stream);
             EnsureDynamicObjectMatchMockData(dyn.First());
+            EnsureStreamIsDispose(stream);
         }
-
 
         [Author("Joseph McNeal Jr", "josephmcnealjr@gmail.com")]
         [Test]
-        public void Test_DeserializeJsonToTypedObjectList()
+        public void Test_Deserialize_Stream_To_Generic_List_And_Stream_Wont_Dispose()
         {
-            var list = DataSource.DeserializeToList(MockData.EmployeeAsJsonList,typeof(List<Employee>));
-            EnsureDynamicObjectMatchMockData(list.First());
+            var stream = MockData.GetEmployeeListAsStream(DataSource.Encoding);
+            var dyn = DataSource.DeserializeToList<Employee>(stream,1024,true);
+            EnsureDynamicObjectMatchMockData(dyn.First());
+            EnsureStreamIsNotDisposeAndIsAtEndOfStream(stream);
         }
+
+
+        //[Author("Joseph McNeal Jr", "josephmcnealjr@gmail.com")]
+        //[Test]
+        //public void Test_Deserialize_Json_To_Typed_Object_List()
+        //{
+        //    var list = DataSource.DeserializeToList(MockData.EmployeeAsJsonList,typeof(List<Employee>));
+        //    EnsureDynamicObjectMatchMockData(list.First());
+        //}
 
         [Author("Joseph McNeal Jr", "josephmcnealjr@gmail.com")]
         [Test]
-        public void Test_DeserializeStreamToTypedObjectList()
+        public void Test_Deserialize_Stream_To_Typed_Object_List_And_Stream_Is_Dispose()
         {
             var stream = MockData.GetEmployeeListAsStream(DataSource.Encoding);
             List<dynamic> list = DataSource.DeserializeToList(stream, typeof(List<Employee>));
             EnsureFirstNameAndLastNameMatchMockData(list.First().FirstName.ToString(), list.First().LastName.ToString());
+            EnsureStreamIsDispose(stream);
+        }
+        [Author("Joseph McNeal Jr", "josephmcnealjr@gmail.com")]
+        [Test]
+        public void Test_Deserialize_Stream_To_Typed_Object_List_And_Stream_Wont_Dispose()
+        {
+            var stream = MockData.GetEmployeeListAsStream(DataSource.Encoding);
+            List<dynamic> list = DataSource.DeserializeToList(stream, typeof(List<Employee>),1024,true);
+            EnsureFirstNameAndLastNameMatchMockData(list.First().FirstName.ToString(), list.First().LastName.ToString());
+            EnsureStreamIsNotDisposeAndIsAtEndOfStream(stream);
         }
 
 
@@ -160,7 +231,7 @@ namespace DotNetHelper.Serialization.Json.Tests
         {
             if (firstName.Equals(MockData.Employee.FirstName) && lastName.Equals(MockData.Employee.LastName))
             {
-                // Assert.Pass("Dynamic Object matches expected results");
+
             }
             else
             {
@@ -170,7 +241,7 @@ namespace DotNetHelper.Serialization.Json.Tests
 
         private void EnsureDynamicObjectMatchMockData(dynamic dyn)
         {
-            EnsureFirstNameAndLastNameMatchMockData(dyn.FirstName, dyn.LastName);
+            EnsureFirstNameAndLastNameMatchMockData(dyn.FirstName.ToString(), dyn.LastName.ToString());
         }
 
         private void EnsureGenericObjectMatchMockData(Employee employee)
@@ -178,21 +249,36 @@ namespace DotNetHelper.Serialization.Json.Tests
             EnsureFirstNameAndLastNameMatchMockData(employee.FirstName, employee.LastName);
         }
 
-        private void ShouldMatchMockJsonString(string json)
+        private void EnsureStreamIsNotDisposeAndIsAtEndOfStream(Stream stream)
         {
-            var equals = string.Equals(json, MockData.EmployeeAsJson, StringComparison.OrdinalIgnoreCase);
-            Assert.IsTrue(equals, $"Test failed due to json not matching mock data");
+            try
+            {
+                if (stream.Position != stream.Length)
+                {
+                    Assert.Fail("The entire stream has not been read");
+                }
+            }catch(ObjectDisposedException disposedException)
+            {
+                Assert.Fail($"The stream has been disposed {disposedException.Message}");
+            }
+            
         }
-        private void ShouldMatchMockObject(Employee employee)
+
+
+        private void EnsureStreamIsDispose(Stream stream)
         {
-            var equals = employee.FirstName == MockData.Employee.FirstName && employee.LastName == MockData.Employee.LastName;
-            Assert.IsTrue(equals, $"Test failed due to json not matching mock data");
+            try
+            {
+                var position = stream.Position;
+                Assert.Fail("The stream is not disposed.");
+            }
+            catch (ObjectDisposedException)
+            {
+                return;
+            }           
         }
-        private void EnsureEmployeeValueMatch(dynamic employee)
-        {
-            var equals = employee.FirstName == MockData.Employee.FirstName && employee.LastName == MockData.Employee.LastName;
-            Assert.IsTrue(equals, $"Test filed due to json not matching mock data");
-        }
+
+ 
 
 
     }

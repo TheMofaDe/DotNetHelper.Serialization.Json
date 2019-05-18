@@ -5,55 +5,56 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Xml;
+using System.Xml.Linq;
 using DotNetHelper.Serialization.Abstractions.Interface;
 using DotNetHelper.Serialization.Json.Extension;
 using Newtonsoft.Json;
 
 namespace DotNetHelper.Serialization.Json
 {
-    public class DataSourceJson : ISerializer
+    public class DataSourceXml : ISerializer
     {
-        public JsonSerializerSettings Settings { get; set; }
+        private DataSourceJson SerializerJson { get; } 
 
         public Encoding Encoding { get; set; }
 
-        public DataSourceJson()
+        public DataSourceXml()
         {
-            Settings = new JsonSerializerSettings();
             Encoding = Encoding.UTF8;
+            SerializerJson = new DataSourceJson(Encoding);
         }
-        public DataSourceJson(JsonSerializerSettings settings)
+        public DataSourceXml(Encoding encoding)
         {
-            Settings = settings ?? new JsonSerializerSettings();
-            Encoding = Encoding ?? Encoding.UTF8;
-        }
-        public DataSourceJson(Encoding encoding, JsonSerializerSettings settings = null)
-        {
-            Settings = settings ?? new JsonSerializerSettings();
             Encoding = encoding ?? Encoding.UTF8;
+            SerializerJson = new DataSourceJson(Encoding);
         }
 
-        public dynamic Deserialize(string json)
+        public dynamic Deserialize(string xml)
         {
-            json.IsNullThrow(nameof(json));
-            return JsonConvert.DeserializeObject(json,typeof(ExpandoObject),Settings);
+            xml.IsNullThrow(nameof(xml));
+            var doc = new XmlDocument();
+            doc.LoadXml(xml);
+            XDocument.Parse(xml)
+            var json = JsonConvert.SerializeXmlNode(doc);
+            return SerializerJson.Deserialize(json);
         }
 
-        public dynamic Deserialize(Stream stream, int bufferSize = 1024, bool leaveStreamOpen = false)  
+        public dynamic Deserialize(Stream stream, int bufferSize = 1024, bool leaveStreamOpen = false)
         {
             stream.IsNullThrow(nameof(stream));
-            using (var sr = new StreamReader(stream,Encoding,false,bufferSize,leaveStreamOpen))
+            using (var sr = new StreamReader(stream, Encoding, false, bufferSize, leaveStreamOpen))
             using (JsonReader reader = new JsonTextReader(sr))
             {
-                var serializer = JsonSerializer.Create(Settings);
-                return serializer.Deserialize(reader,typeof(ExpandoObject));
+                var serializer = JsonSerializer.Create(SerializerJson.Settings);
+                serializer.
+                return serializer.Deserialize(reader, typeof(ExpandoObject));
             }
         }
 
         public T Deserialize<T>(string json) where T : class
         {
             json.IsNullThrow(nameof(json));
-            return JsonConvert.DeserializeObject<T>(json,Settings);
+            return JsonConvert.DeserializeObject<T>(json, Settings);
         }
 
         public T Deserialize<T>(Stream stream, int bufferSize = 1024, bool leaveStreamOpen = false) where T : class
@@ -80,14 +81,14 @@ namespace DotNetHelper.Serialization.Json
             using (JsonReader reader = new JsonTextReader(sr))
             {
                 var serializer = JsonSerializer.Create(Settings);
-                return serializer.Deserialize(reader,type);
+                return serializer.Deserialize(reader, type);
             }
         }
 
         public List<dynamic> DeserializeToList(string json)
         {
             json.IsNullThrow(nameof(json));
-            return JsonConvert.DeserializeObject<List<dynamic>>(json, Settings) ;
+            return JsonConvert.DeserializeObject<List<dynamic>>(json, Settings);
         }
 
         public List<dynamic> DeserializeToList(Stream stream, int bufferSize = 1024, bool leaveStreamOpen = false)
@@ -97,8 +98,8 @@ namespace DotNetHelper.Serialization.Json
             using (JsonReader reader = new JsonTextReader(sr))
             {
                 var serializer = JsonSerializer.Create(Settings);
-                return serializer.Deserialize(reader,typeof(List<dynamic>)) as List<dynamic>;
-            
+                return serializer.Deserialize(reader, typeof(List<dynamic>)) as List<dynamic>;
+
             }
         }
 

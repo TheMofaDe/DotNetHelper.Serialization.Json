@@ -1,0 +1,457 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: DotNetHelper.Serialization.Json
+  name: DotNetHelper.Serialization.Json
+  href: api/DotNetHelper.Serialization.Json.html
+  commentId: N:DotNetHelper.Serialization.Json
+  fullName: DotNetHelper.Serialization.Json
+  nameWithType: DotNetHelper.Serialization.Json
+- uid: DotNetHelper.Serialization.Json.DataSourceJson
+  name: DataSourceJson
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html
+  commentId: T:DotNetHelper.Serialization.Json.DataSourceJson
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson
+  nameWithType: DataSourceJson
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.#ctor
+  name: DataSourceJson()
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson__ctor
+  commentId: M:DotNetHelper.Serialization.Json.DataSourceJson.#ctor
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.DataSourceJson()
+  nameWithType: DataSourceJson.DataSourceJson()
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.#ctor(Newtonsoft.Json.JsonSerializerSettings)
+  name: DataSourceJson(JsonSerializerSettings)
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson__ctor_Newtonsoft_Json_JsonSerializerSettings_
+  commentId: M:DotNetHelper.Serialization.Json.DataSourceJson.#ctor(Newtonsoft.Json.JsonSerializerSettings)
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.DataSourceJson(Newtonsoft.Json.JsonSerializerSettings)
+  nameWithType: DataSourceJson.DataSourceJson(JsonSerializerSettings)
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.#ctor(System.Text.Encoding,Newtonsoft.Json.JsonSerializerSettings)
+  name: DataSourceJson(Encoding, JsonSerializerSettings)
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson__ctor_System_Text_Encoding_Newtonsoft_Json_JsonSerializerSettings_
+  commentId: M:DotNetHelper.Serialization.Json.DataSourceJson.#ctor(System.Text.Encoding,Newtonsoft.Json.JsonSerializerSettings)
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.DataSourceJson(System.Text.Encoding, Newtonsoft.Json.JsonSerializerSettings)
+  nameWithType: DataSourceJson.DataSourceJson(Encoding, JsonSerializerSettings)
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.#ctor*
+  name: DataSourceJson
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson__ctor_
+  commentId: Overload:DotNetHelper.Serialization.Json.DataSourceJson.#ctor
+  isSpec: "True"
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.DataSourceJson
+  nameWithType: DataSourceJson.DataSourceJson
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.Deserialize(System.IO.Stream,System.Int32,System.Boolean)
+  name: Deserialize(Stream, Int32, Boolean)
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_Deserialize_System_IO_Stream_System_Int32_System_Boolean_
+  commentId: M:DotNetHelper.Serialization.Json.DataSourceJson.Deserialize(System.IO.Stream,System.Int32,System.Boolean)
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.Deserialize(System.IO.Stream, System.Int32, System.Boolean)
+  nameWithType: DataSourceJson.Deserialize(Stream, Int32, Boolean)
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.Deserialize(System.IO.Stream,System.Type,System.Int32,System.Boolean)
+  name: Deserialize(Stream, Type, Int32, Boolean)
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_Deserialize_System_IO_Stream_System_Type_System_Int32_System_Boolean_
+  commentId: M:DotNetHelper.Serialization.Json.DataSourceJson.Deserialize(System.IO.Stream,System.Type,System.Int32,System.Boolean)
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.Deserialize(System.IO.Stream, System.Type, System.Int32, System.Boolean)
+  nameWithType: DataSourceJson.Deserialize(Stream, Type, Int32, Boolean)
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.Deserialize(System.String)
+  name: Deserialize(String)
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_Deserialize_System_String_
+  commentId: M:DotNetHelper.Serialization.Json.DataSourceJson.Deserialize(System.String)
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.Deserialize(System.String)
+  nameWithType: DataSourceJson.Deserialize(String)
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.Deserialize(System.String,System.Type)
+  name: Deserialize(String, Type)
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_Deserialize_System_String_System_Type_
+  commentId: M:DotNetHelper.Serialization.Json.DataSourceJson.Deserialize(System.String,System.Type)
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.Deserialize(System.String, System.Type)
+  nameWithType: DataSourceJson.Deserialize(String, Type)
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.Deserialize*
+  name: Deserialize
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_Deserialize_
+  commentId: Overload:DotNetHelper.Serialization.Json.DataSourceJson.Deserialize
+  isSpec: "True"
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.Deserialize
+  nameWithType: DataSourceJson.Deserialize
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.Deserialize``1(System.IO.Stream,System.Int32,System.Boolean)
+  name: Deserialize<T>(Stream, Int32, Boolean)
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_Deserialize__1_System_IO_Stream_System_Int32_System_Boolean_
+  commentId: M:DotNetHelper.Serialization.Json.DataSourceJson.Deserialize``1(System.IO.Stream,System.Int32,System.Boolean)
+  name.vb: Deserialize(Of T)(Stream, Int32, Boolean)
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.Deserialize<T>(System.IO.Stream, System.Int32, System.Boolean)
+  fullName.vb: DotNetHelper.Serialization.Json.DataSourceJson.Deserialize(Of T)(System.IO.Stream, System.Int32, System.Boolean)
+  nameWithType: DataSourceJson.Deserialize<T>(Stream, Int32, Boolean)
+  nameWithType.vb: DataSourceJson.Deserialize(Of T)(Stream, Int32, Boolean)
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.Deserialize``1(System.String)
+  name: Deserialize<T>(String)
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_Deserialize__1_System_String_
+  commentId: M:DotNetHelper.Serialization.Json.DataSourceJson.Deserialize``1(System.String)
+  name.vb: Deserialize(Of T)(String)
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.Deserialize<T>(System.String)
+  fullName.vb: DotNetHelper.Serialization.Json.DataSourceJson.Deserialize(Of T)(System.String)
+  nameWithType: DataSourceJson.Deserialize<T>(String)
+  nameWithType.vb: DataSourceJson.Deserialize(Of T)(String)
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.DeserializeToList(System.IO.Stream,System.Int32,System.Boolean)
+  name: DeserializeToList(Stream, Int32, Boolean)
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_DeserializeToList_System_IO_Stream_System_Int32_System_Boolean_
+  commentId: M:DotNetHelper.Serialization.Json.DataSourceJson.DeserializeToList(System.IO.Stream,System.Int32,System.Boolean)
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.DeserializeToList(System.IO.Stream, System.Int32, System.Boolean)
+  nameWithType: DataSourceJson.DeserializeToList(Stream, Int32, Boolean)
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.DeserializeToList(System.IO.Stream,System.Type,System.Int32,System.Boolean)
+  name: DeserializeToList(Stream, Type, Int32, Boolean)
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_DeserializeToList_System_IO_Stream_System_Type_System_Int32_System_Boolean_
+  commentId: M:DotNetHelper.Serialization.Json.DataSourceJson.DeserializeToList(System.IO.Stream,System.Type,System.Int32,System.Boolean)
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.DeserializeToList(System.IO.Stream, System.Type, System.Int32, System.Boolean)
+  nameWithType: DataSourceJson.DeserializeToList(Stream, Type, Int32, Boolean)
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.DeserializeToList(System.String)
+  name: DeserializeToList(String)
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_DeserializeToList_System_String_
+  commentId: M:DotNetHelper.Serialization.Json.DataSourceJson.DeserializeToList(System.String)
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.DeserializeToList(System.String)
+  nameWithType: DataSourceJson.DeserializeToList(String)
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.DeserializeToList(System.String,System.Type)
+  name: DeserializeToList(String, Type)
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_DeserializeToList_System_String_System_Type_
+  commentId: M:DotNetHelper.Serialization.Json.DataSourceJson.DeserializeToList(System.String,System.Type)
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.DeserializeToList(System.String, System.Type)
+  nameWithType: DataSourceJson.DeserializeToList(String, Type)
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.DeserializeToList*
+  name: DeserializeToList
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_DeserializeToList_
+  commentId: Overload:DotNetHelper.Serialization.Json.DataSourceJson.DeserializeToList
+  isSpec: "True"
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.DeserializeToList
+  nameWithType: DataSourceJson.DeserializeToList
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.DeserializeToList``1(System.IO.Stream,System.Int32,System.Boolean)
+  name: DeserializeToList<T>(Stream, Int32, Boolean)
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_DeserializeToList__1_System_IO_Stream_System_Int32_System_Boolean_
+  commentId: M:DotNetHelper.Serialization.Json.DataSourceJson.DeserializeToList``1(System.IO.Stream,System.Int32,System.Boolean)
+  name.vb: DeserializeToList(Of T)(Stream, Int32, Boolean)
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.DeserializeToList<T>(System.IO.Stream, System.Int32, System.Boolean)
+  fullName.vb: DotNetHelper.Serialization.Json.DataSourceJson.DeserializeToList(Of T)(System.IO.Stream, System.Int32, System.Boolean)
+  nameWithType: DataSourceJson.DeserializeToList<T>(Stream, Int32, Boolean)
+  nameWithType.vb: DataSourceJson.DeserializeToList(Of T)(Stream, Int32, Boolean)
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.DeserializeToList``1(System.String)
+  name: DeserializeToList<T>(String)
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_DeserializeToList__1_System_String_
+  commentId: M:DotNetHelper.Serialization.Json.DataSourceJson.DeserializeToList``1(System.String)
+  name.vb: DeserializeToList(Of T)(String)
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.DeserializeToList<T>(System.String)
+  fullName.vb: DotNetHelper.Serialization.Json.DataSourceJson.DeserializeToList(Of T)(System.String)
+  nameWithType: DataSourceJson.DeserializeToList<T>(String)
+  nameWithType.vb: DataSourceJson.DeserializeToList(Of T)(String)
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.Encoding
+  name: Encoding
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_Encoding
+  commentId: P:DotNetHelper.Serialization.Json.DataSourceJson.Encoding
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.Encoding
+  nameWithType: DataSourceJson.Encoding
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.Encoding*
+  name: Encoding
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_Encoding_
+  commentId: Overload:DotNetHelper.Serialization.Json.DataSourceJson.Encoding
+  isSpec: "True"
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.Encoding
+  nameWithType: DataSourceJson.Encoding
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.GetTypeCode
+  name: GetTypeCode()
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_GetTypeCode
+  commentId: M:DotNetHelper.Serialization.Json.DataSourceJson.GetTypeCode
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.GetTypeCode()
+  nameWithType: DataSourceJson.GetTypeCode()
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.GetTypeCode*
+  name: GetTypeCode
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_GetTypeCode_
+  commentId: Overload:DotNetHelper.Serialization.Json.DataSourceJson.GetTypeCode
+  isSpec: "True"
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.GetTypeCode
+  nameWithType: DataSourceJson.GetTypeCode
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.SerializeToStream(System.Object,System.Type,System.Int32,System.Boolean)
+  name: SerializeToStream(Object, Type, Int32, Boolean)
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_SerializeToStream_System_Object_System_Type_System_Int32_System_Boolean_
+  commentId: M:DotNetHelper.Serialization.Json.DataSourceJson.SerializeToStream(System.Object,System.Type,System.Int32,System.Boolean)
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.SerializeToStream(System.Object, System.Type, System.Int32, System.Boolean)
+  nameWithType: DataSourceJson.SerializeToStream(Object, Type, Int32, Boolean)
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.SerializeToStream(System.Object,System.Type,System.IO.Stream,System.Int32,System.Boolean)
+  name: SerializeToStream(Object, Type, Stream, Int32, Boolean)
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_SerializeToStream_System_Object_System_Type_System_IO_Stream_System_Int32_System_Boolean_
+  commentId: M:DotNetHelper.Serialization.Json.DataSourceJson.SerializeToStream(System.Object,System.Type,System.IO.Stream,System.Int32,System.Boolean)
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.SerializeToStream(System.Object, System.Type, System.IO.Stream, System.Int32, System.Boolean)
+  nameWithType: DataSourceJson.SerializeToStream(Object, Type, Stream, Int32, Boolean)
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.SerializeToStream*
+  name: SerializeToStream
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_SerializeToStream_
+  commentId: Overload:DotNetHelper.Serialization.Json.DataSourceJson.SerializeToStream
+  isSpec: "True"
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.SerializeToStream
+  nameWithType: DataSourceJson.SerializeToStream
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.SerializeToStream``1(``0,System.Int32,System.Boolean)
+  name: SerializeToStream<T>(T, Int32, Boolean)
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_SerializeToStream__1___0_System_Int32_System_Boolean_
+  commentId: M:DotNetHelper.Serialization.Json.DataSourceJson.SerializeToStream``1(``0,System.Int32,System.Boolean)
+  name.vb: SerializeToStream(Of T)(T, Int32, Boolean)
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.SerializeToStream<T>(T, System.Int32, System.Boolean)
+  fullName.vb: DotNetHelper.Serialization.Json.DataSourceJson.SerializeToStream(Of T)(T, System.Int32, System.Boolean)
+  nameWithType: DataSourceJson.SerializeToStream<T>(T, Int32, Boolean)
+  nameWithType.vb: DataSourceJson.SerializeToStream(Of T)(T, Int32, Boolean)
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.SerializeToStream``1(``0,System.IO.Stream,System.Int32,System.Boolean)
+  name: SerializeToStream<T>(T, Stream, Int32, Boolean)
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_SerializeToStream__1___0_System_IO_Stream_System_Int32_System_Boolean_
+  commentId: M:DotNetHelper.Serialization.Json.DataSourceJson.SerializeToStream``1(``0,System.IO.Stream,System.Int32,System.Boolean)
+  name.vb: SerializeToStream(Of T)(T, Stream, Int32, Boolean)
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.SerializeToStream<T>(T, System.IO.Stream, System.Int32, System.Boolean)
+  fullName.vb: DotNetHelper.Serialization.Json.DataSourceJson.SerializeToStream(Of T)(T, System.IO.Stream, System.Int32, System.Boolean)
+  nameWithType: DataSourceJson.SerializeToStream<T>(T, Stream, Int32, Boolean)
+  nameWithType.vb: DataSourceJson.SerializeToStream(Of T)(T, Stream, Int32, Boolean)
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.SerializeToString(System.Object)
+  name: SerializeToString(Object)
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_SerializeToString_System_Object_
+  commentId: M:DotNetHelper.Serialization.Json.DataSourceJson.SerializeToString(System.Object)
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.SerializeToString(System.Object)
+  nameWithType: DataSourceJson.SerializeToString(Object)
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.SerializeToString*
+  name: SerializeToString
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_SerializeToString_
+  commentId: Overload:DotNetHelper.Serialization.Json.DataSourceJson.SerializeToString
+  isSpec: "True"
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.SerializeToString
+  nameWithType: DataSourceJson.SerializeToString
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.SerializeToString``1(``0)
+  name: SerializeToString<T>(T)
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_SerializeToString__1___0_
+  commentId: M:DotNetHelper.Serialization.Json.DataSourceJson.SerializeToString``1(``0)
+  name.vb: SerializeToString(Of T)(T)
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.SerializeToString<T>(T)
+  fullName.vb: DotNetHelper.Serialization.Json.DataSourceJson.SerializeToString(Of T)(T)
+  nameWithType: DataSourceJson.SerializeToString<T>(T)
+  nameWithType.vb: DataSourceJson.SerializeToString(Of T)(T)
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.SerializeToXml(System.String)
+  name: SerializeToXml(String)
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_SerializeToXml_System_String_
+  commentId: M:DotNetHelper.Serialization.Json.DataSourceJson.SerializeToXml(System.String)
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.SerializeToXml(System.String)
+  nameWithType: DataSourceJson.SerializeToXml(String)
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.SerializeToXml*
+  name: SerializeToXml
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_SerializeToXml_
+  commentId: Overload:DotNetHelper.Serialization.Json.DataSourceJson.SerializeToXml
+  isSpec: "True"
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.SerializeToXml
+  nameWithType: DataSourceJson.SerializeToXml
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.Settings
+  name: Settings
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_Settings
+  commentId: P:DotNetHelper.Serialization.Json.DataSourceJson.Settings
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.Settings
+  nameWithType: DataSourceJson.Settings
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.Settings*
+  name: Settings
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_Settings_
+  commentId: Overload:DotNetHelper.Serialization.Json.DataSourceJson.Settings
+  isSpec: "True"
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.Settings
+  nameWithType: DataSourceJson.Settings
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.ToBoolean(System.IFormatProvider)
+  name: ToBoolean(IFormatProvider)
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_ToBoolean_System_IFormatProvider_
+  commentId: M:DotNetHelper.Serialization.Json.DataSourceJson.ToBoolean(System.IFormatProvider)
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.ToBoolean(System.IFormatProvider)
+  nameWithType: DataSourceJson.ToBoolean(IFormatProvider)
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.ToBoolean*
+  name: ToBoolean
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_ToBoolean_
+  commentId: Overload:DotNetHelper.Serialization.Json.DataSourceJson.ToBoolean
+  isSpec: "True"
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.ToBoolean
+  nameWithType: DataSourceJson.ToBoolean
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.ToByte(System.IFormatProvider)
+  name: ToByte(IFormatProvider)
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_ToByte_System_IFormatProvider_
+  commentId: M:DotNetHelper.Serialization.Json.DataSourceJson.ToByte(System.IFormatProvider)
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.ToByte(System.IFormatProvider)
+  nameWithType: DataSourceJson.ToByte(IFormatProvider)
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.ToByte*
+  name: ToByte
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_ToByte_
+  commentId: Overload:DotNetHelper.Serialization.Json.DataSourceJson.ToByte
+  isSpec: "True"
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.ToByte
+  nameWithType: DataSourceJson.ToByte
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.ToChar(System.IFormatProvider)
+  name: ToChar(IFormatProvider)
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_ToChar_System_IFormatProvider_
+  commentId: M:DotNetHelper.Serialization.Json.DataSourceJson.ToChar(System.IFormatProvider)
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.ToChar(System.IFormatProvider)
+  nameWithType: DataSourceJson.ToChar(IFormatProvider)
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.ToChar*
+  name: ToChar
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_ToChar_
+  commentId: Overload:DotNetHelper.Serialization.Json.DataSourceJson.ToChar
+  isSpec: "True"
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.ToChar
+  nameWithType: DataSourceJson.ToChar
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.ToDateTime(System.IFormatProvider)
+  name: ToDateTime(IFormatProvider)
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_ToDateTime_System_IFormatProvider_
+  commentId: M:DotNetHelper.Serialization.Json.DataSourceJson.ToDateTime(System.IFormatProvider)
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.ToDateTime(System.IFormatProvider)
+  nameWithType: DataSourceJson.ToDateTime(IFormatProvider)
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.ToDateTime*
+  name: ToDateTime
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_ToDateTime_
+  commentId: Overload:DotNetHelper.Serialization.Json.DataSourceJson.ToDateTime
+  isSpec: "True"
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.ToDateTime
+  nameWithType: DataSourceJson.ToDateTime
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.ToDecimal(System.IFormatProvider)
+  name: ToDecimal(IFormatProvider)
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_ToDecimal_System_IFormatProvider_
+  commentId: M:DotNetHelper.Serialization.Json.DataSourceJson.ToDecimal(System.IFormatProvider)
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.ToDecimal(System.IFormatProvider)
+  nameWithType: DataSourceJson.ToDecimal(IFormatProvider)
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.ToDecimal*
+  name: ToDecimal
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_ToDecimal_
+  commentId: Overload:DotNetHelper.Serialization.Json.DataSourceJson.ToDecimal
+  isSpec: "True"
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.ToDecimal
+  nameWithType: DataSourceJson.ToDecimal
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.ToDouble(System.IFormatProvider)
+  name: ToDouble(IFormatProvider)
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_ToDouble_System_IFormatProvider_
+  commentId: M:DotNetHelper.Serialization.Json.DataSourceJson.ToDouble(System.IFormatProvider)
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.ToDouble(System.IFormatProvider)
+  nameWithType: DataSourceJson.ToDouble(IFormatProvider)
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.ToDouble*
+  name: ToDouble
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_ToDouble_
+  commentId: Overload:DotNetHelper.Serialization.Json.DataSourceJson.ToDouble
+  isSpec: "True"
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.ToDouble
+  nameWithType: DataSourceJson.ToDouble
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.ToInt16(System.IFormatProvider)
+  name: ToInt16(IFormatProvider)
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_ToInt16_System_IFormatProvider_
+  commentId: M:DotNetHelper.Serialization.Json.DataSourceJson.ToInt16(System.IFormatProvider)
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.ToInt16(System.IFormatProvider)
+  nameWithType: DataSourceJson.ToInt16(IFormatProvider)
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.ToInt16*
+  name: ToInt16
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_ToInt16_
+  commentId: Overload:DotNetHelper.Serialization.Json.DataSourceJson.ToInt16
+  isSpec: "True"
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.ToInt16
+  nameWithType: DataSourceJson.ToInt16
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.ToInt32(System.IFormatProvider)
+  name: ToInt32(IFormatProvider)
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_ToInt32_System_IFormatProvider_
+  commentId: M:DotNetHelper.Serialization.Json.DataSourceJson.ToInt32(System.IFormatProvider)
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.ToInt32(System.IFormatProvider)
+  nameWithType: DataSourceJson.ToInt32(IFormatProvider)
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.ToInt32*
+  name: ToInt32
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_ToInt32_
+  commentId: Overload:DotNetHelper.Serialization.Json.DataSourceJson.ToInt32
+  isSpec: "True"
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.ToInt32
+  nameWithType: DataSourceJson.ToInt32
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.ToInt64(System.IFormatProvider)
+  name: ToInt64(IFormatProvider)
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_ToInt64_System_IFormatProvider_
+  commentId: M:DotNetHelper.Serialization.Json.DataSourceJson.ToInt64(System.IFormatProvider)
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.ToInt64(System.IFormatProvider)
+  nameWithType: DataSourceJson.ToInt64(IFormatProvider)
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.ToInt64*
+  name: ToInt64
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_ToInt64_
+  commentId: Overload:DotNetHelper.Serialization.Json.DataSourceJson.ToInt64
+  isSpec: "True"
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.ToInt64
+  nameWithType: DataSourceJson.ToInt64
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.ToSByte(System.IFormatProvider)
+  name: ToSByte(IFormatProvider)
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_ToSByte_System_IFormatProvider_
+  commentId: M:DotNetHelper.Serialization.Json.DataSourceJson.ToSByte(System.IFormatProvider)
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.ToSByte(System.IFormatProvider)
+  nameWithType: DataSourceJson.ToSByte(IFormatProvider)
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.ToSByte*
+  name: ToSByte
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_ToSByte_
+  commentId: Overload:DotNetHelper.Serialization.Json.DataSourceJson.ToSByte
+  isSpec: "True"
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.ToSByte
+  nameWithType: DataSourceJson.ToSByte
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.ToSingle(System.IFormatProvider)
+  name: ToSingle(IFormatProvider)
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_ToSingle_System_IFormatProvider_
+  commentId: M:DotNetHelper.Serialization.Json.DataSourceJson.ToSingle(System.IFormatProvider)
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.ToSingle(System.IFormatProvider)
+  nameWithType: DataSourceJson.ToSingle(IFormatProvider)
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.ToSingle*
+  name: ToSingle
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_ToSingle_
+  commentId: Overload:DotNetHelper.Serialization.Json.DataSourceJson.ToSingle
+  isSpec: "True"
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.ToSingle
+  nameWithType: DataSourceJson.ToSingle
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.ToString(System.IFormatProvider)
+  name: ToString(IFormatProvider)
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_ToString_System_IFormatProvider_
+  commentId: M:DotNetHelper.Serialization.Json.DataSourceJson.ToString(System.IFormatProvider)
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.ToString(System.IFormatProvider)
+  nameWithType: DataSourceJson.ToString(IFormatProvider)
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.ToString*
+  name: ToString
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_ToString_
+  commentId: Overload:DotNetHelper.Serialization.Json.DataSourceJson.ToString
+  isSpec: "True"
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.ToString
+  nameWithType: DataSourceJson.ToString
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.ToType(System.Type,System.IFormatProvider)
+  name: ToType(Type, IFormatProvider)
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_ToType_System_Type_System_IFormatProvider_
+  commentId: M:DotNetHelper.Serialization.Json.DataSourceJson.ToType(System.Type,System.IFormatProvider)
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.ToType(System.Type, System.IFormatProvider)
+  nameWithType: DataSourceJson.ToType(Type, IFormatProvider)
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.ToType*
+  name: ToType
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_ToType_
+  commentId: Overload:DotNetHelper.Serialization.Json.DataSourceJson.ToType
+  isSpec: "True"
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.ToType
+  nameWithType: DataSourceJson.ToType
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.ToUInt16(System.IFormatProvider)
+  name: ToUInt16(IFormatProvider)
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_ToUInt16_System_IFormatProvider_
+  commentId: M:DotNetHelper.Serialization.Json.DataSourceJson.ToUInt16(System.IFormatProvider)
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.ToUInt16(System.IFormatProvider)
+  nameWithType: DataSourceJson.ToUInt16(IFormatProvider)
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.ToUInt16*
+  name: ToUInt16
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_ToUInt16_
+  commentId: Overload:DotNetHelper.Serialization.Json.DataSourceJson.ToUInt16
+  isSpec: "True"
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.ToUInt16
+  nameWithType: DataSourceJson.ToUInt16
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.ToUInt32(System.IFormatProvider)
+  name: ToUInt32(IFormatProvider)
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_ToUInt32_System_IFormatProvider_
+  commentId: M:DotNetHelper.Serialization.Json.DataSourceJson.ToUInt32(System.IFormatProvider)
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.ToUInt32(System.IFormatProvider)
+  nameWithType: DataSourceJson.ToUInt32(IFormatProvider)
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.ToUInt32*
+  name: ToUInt32
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_ToUInt32_
+  commentId: Overload:DotNetHelper.Serialization.Json.DataSourceJson.ToUInt32
+  isSpec: "True"
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.ToUInt32
+  nameWithType: DataSourceJson.ToUInt32
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.ToUInt64(System.IFormatProvider)
+  name: ToUInt64(IFormatProvider)
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_ToUInt64_System_IFormatProvider_
+  commentId: M:DotNetHelper.Serialization.Json.DataSourceJson.ToUInt64(System.IFormatProvider)
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.ToUInt64(System.IFormatProvider)
+  nameWithType: DataSourceJson.ToUInt64(IFormatProvider)
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.ToUInt64*
+  name: ToUInt64
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_ToUInt64_
+  commentId: Overload:DotNetHelper.Serialization.Json.DataSourceJson.ToUInt64
+  isSpec: "True"
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.ToUInt64
+  nameWithType: DataSourceJson.ToUInt64

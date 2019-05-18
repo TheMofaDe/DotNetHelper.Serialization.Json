@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: DotNetHelper.Serialization.Json
+  commentId: N:DotNetHelper.Serialization.Json
+  id: DotNetHelper.Serialization.Json
+  children:
+  - DotNetHelper.Serialization.Json.DataSourceJson
+  langs:
+  - csharp
+  - vb
+  name: DotNetHelper.Serialization.Json
+  nameWithType: DotNetHelper.Serialization.Json
+  fullName: DotNetHelper.Serialization.Json
+  type: Namespace
+  assemblies:
+  - DotNetHelper.Serialization.Json
+references:
+- uid: DotNetHelper.Serialization.Json.DataSourceJson
+  commentId: T:DotNetHelper.Serialization.Json.DataSourceJson
+  name: DataSourceJson
+  nameWithType: DataSourceJson
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson
