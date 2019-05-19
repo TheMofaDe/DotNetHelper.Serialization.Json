@@ -158,11 +158,11 @@ namespace DotNetHelper.Serialization.Json
             }
         }
 
-        public Stream SerializeToStream<T>(T obj, int bufferSize = 1024, bool leaveStreamOpen = false) where T : class
+        public Stream SerializeToStream<T>(T obj, int bufferSize = 1024) where T : class
         {
             var memoryStream = new MemoryStream();
             var serializer = JsonSerializer.Create(Settings);
-            using (var sw = new StreamWriter(memoryStream, Encoding, bufferSize, leaveStreamOpen))
+            using (var sw = new StreamWriter(memoryStream, Encoding, bufferSize, true))
             using (var jsonTextWriter = new JsonTextWriter(sw))
             {
                 serializer.Serialize(jsonTextWriter, obj);
@@ -170,11 +170,11 @@ namespace DotNetHelper.Serialization.Json
             return memoryStream;
         }
 
-        public Stream SerializeToStream(object obj, Type type, int bufferSize = 1024, bool leaveStreamOpen = false)
+        public Stream SerializeToStream(object obj, Type type, int bufferSize = 1024)
         {
             var serializer = JsonSerializer.Create(Settings);
             var memoryStream = new MemoryStream();
-            using (var sw = new StreamWriter(memoryStream, Encoding, bufferSize, leaveStreamOpen))
+            using (var sw = new StreamWriter(memoryStream, Encoding, bufferSize, true))
             using (var jsonTextWriter = new JsonTextWriter(sw))
             {
                 serializer.Serialize(jsonTextWriter, obj, type);

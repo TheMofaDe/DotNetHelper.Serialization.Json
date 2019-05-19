@@ -112,7 +112,7 @@ namespace DotNetHelper.Serialization.Json.Tests
         public void Test_Serialize_Generic_To_Stream_And_Stream_Wont_Dispose()
         {
 
-            var stream = Stream.Synchronized(DataSource.SerializeToStream(MockData.Employee, 1024, true));
+            var stream = Stream.Synchronized(DataSource.SerializeToStream(MockData.Employee, 1024));
             // TODO :: EnsureStreamMatchMockDataJson(stream);
             EnsureStreamIsNotDisposeAndIsAtEndOfStream(stream);
             stream.Seek(0, SeekOrigin.Begin);
@@ -122,7 +122,7 @@ namespace DotNetHelper.Serialization.Json.Tests
         public void Test_Serialize_Generic_To_Stream_And_Stream_Is_Dispose()
         {
 
-            var stream = DataSource.SerializeToStream(MockData.Employee, 1024, false);
+            var stream = DataSource.SerializeToStream(MockData.Employee, 1024);
             // TODO :: EnsureStreamMatchMockDataJson(stream);
             EnsureStreamIsDispose(stream);
         }
@@ -134,7 +134,7 @@ namespace DotNetHelper.Serialization.Json.Tests
         public void Test_Serialize_Object_To_Stream_And_Stream_Wont_Dispose()
         {
 
-            var stream = Stream.Synchronized(DataSource.SerializeToStream(MockData.Employee,MockData.Employee.GetType(), 1024, true));
+            var stream = Stream.Synchronized(DataSource.SerializeToStream(MockData.Employee,MockData.Employee.GetType(), 1024));
             // TODO :: EnsureStreamMatchMockDataJson(stream);
             EnsureStreamIsNotDisposeAndIsAtEndOfStream(stream);
             stream.Seek(0, SeekOrigin.Begin);
@@ -144,7 +144,7 @@ namespace DotNetHelper.Serialization.Json.Tests
         public void Test_Serialize_Object_To_Stream_And_Stream_Is_Dispose()
         {
 
-            var stream = DataSource.SerializeToStream(MockData.Employee, MockData.Employee.GetType(),1024, false);
+            var stream = DataSource.SerializeToStream(MockData.Employee, MockData.Employee.GetType(),1024);
             // TODO :: EnsureStreamMatchMockDataJson(stream);
             EnsureStreamIsDispose(stream);
         }
