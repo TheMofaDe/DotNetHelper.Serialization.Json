@@ -22,9 +22,12 @@ items:
   - DotNetHelper.Serialization.Json.DataSourceJson.DeserializeToList``1(System.String)
   - DotNetHelper.Serialization.Json.DataSourceJson.Encoding
   - DotNetHelper.Serialization.Json.DataSourceJson.GetTypeCode
-  - DotNetHelper.Serialization.Json.DataSourceJson.SerializeToStream(System.Object,System.Type,System.Int32,System.Boolean)
+  - DotNetHelper.Serialization.Json.DataSourceJson.SerializeListToStream``1(System.Collections.Generic.IEnumerable{``0},System.Int32)
+  - DotNetHelper.Serialization.Json.DataSourceJson.SerializeListToStream``1(System.Collections.Generic.IEnumerable{``0},System.IO.Stream,System.Int32,System.Boolean)
+  - DotNetHelper.Serialization.Json.DataSourceJson.SerializeListToString``1(System.Collections.Generic.IEnumerable{``0})
+  - DotNetHelper.Serialization.Json.DataSourceJson.SerializeToStream(System.Object,System.Type,System.Int32)
   - DotNetHelper.Serialization.Json.DataSourceJson.SerializeToStream(System.Object,System.Type,System.IO.Stream,System.Int32,System.Boolean)
-  - DotNetHelper.Serialization.Json.DataSourceJson.SerializeToStream``1(``0,System.Int32,System.Boolean)
+  - DotNetHelper.Serialization.Json.DataSourceJson.SerializeToStream``1(``0,System.Int32)
   - DotNetHelper.Serialization.Json.DataSourceJson.SerializeToStream``1(``0,System.IO.Stream,System.Int32,System.Boolean)
   - DotNetHelper.Serialization.Json.DataSourceJson.SerializeToString(System.Object)
   - DotNetHelper.Serialization.Json.DataSourceJson.SerializeToString``1(``0)
@@ -526,7 +529,7 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Json.git
     id: DeserializeToList
     path: ../src/DotNetHelper.Serialization.Json/DataSourceJson.cs
-    startLine: 86
+    startLine: 88
   assemblies:
   - DotNetHelper.Serialization.Json
   namespace: DotNetHelper.Serialization.Json
@@ -563,7 +566,7 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Json.git
     id: DeserializeToList
     path: ../src/DotNetHelper.Serialization.Json/DataSourceJson.cs
-    startLine: 92
+    startLine: 94
   assemblies:
   - DotNetHelper.Serialization.Json
   namespace: DotNetHelper.Serialization.Json
@@ -604,7 +607,7 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Json.git
     id: DeserializeToList
     path: ../src/DotNetHelper.Serialization.Json/DataSourceJson.cs
-    startLine: 104
+    startLine: 106
   assemblies:
   - DotNetHelper.Serialization.Json
   namespace: DotNetHelper.Serialization.Json
@@ -648,7 +651,7 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Json.git
     id: DeserializeToList
     path: ../src/DotNetHelper.Serialization.Json/DataSourceJson.cs
-    startLine: 110
+    startLine: 112
   assemblies:
   - DotNetHelper.Serialization.Json
   namespace: DotNetHelper.Serialization.Json
@@ -696,7 +699,7 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Json.git
     id: DeserializeToList
     path: ../src/DotNetHelper.Serialization.Json/DataSourceJson.cs
-    startLine: 121
+    startLine: 123
   assemblies:
   - DotNetHelper.Serialization.Json
   namespace: DotNetHelper.Serialization.Json
@@ -735,7 +738,7 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Json.git
     id: DeserializeToList
     path: ../src/DotNetHelper.Serialization.Json/DataSourceJson.cs
-    startLine: 127
+    startLine: 129
   assemblies:
   - DotNetHelper.Serialization.Json
   namespace: DotNetHelper.Serialization.Json
@@ -776,7 +779,7 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Json.git
     id: GetTypeCode
     path: ../src/DotNetHelper.Serialization.Json/DataSourceJson.cs
-    startLine: 138
+    startLine: 140
   assemblies:
   - DotNetHelper.Serialization.Json
   namespace: DotNetHelper.Serialization.Json
@@ -810,7 +813,7 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Json.git
     id: SerializeToStream
     path: ../src/DotNetHelper.Serialization.Json/DataSourceJson.cs
-    startLine: 143
+    startLine: 145
   assemblies:
   - DotNetHelper.Serialization.Json
   namespace: DotNetHelper.Serialization.Json
@@ -840,6 +843,54 @@ items:
   - Public
   fullName.vb: DotNetHelper.Serialization.Json.DataSourceJson.SerializeToStream(Of T)(T, System.IO.Stream, System.Int32, System.Boolean)
   name.vb: SerializeToStream(Of T)(T, Stream, Int32, Boolean)
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.SerializeListToStream``1(System.Collections.Generic.IEnumerable{``0},System.IO.Stream,System.Int32,System.Boolean)
+  commentId: M:DotNetHelper.Serialization.Json.DataSourceJson.SerializeListToStream``1(System.Collections.Generic.IEnumerable{``0},System.IO.Stream,System.Int32,System.Boolean)
+  id: SerializeListToStream``1(System.Collections.Generic.IEnumerable{``0},System.IO.Stream,System.Int32,System.Boolean)
+  parent: DotNetHelper.Serialization.Json.DataSourceJson
+  langs:
+  - csharp
+  - vb
+  name: SerializeListToStream<T>(IEnumerable<T>, Stream, Int32, Boolean)
+  nameWithType: DataSourceJson.SerializeListToStream<T>(IEnumerable<T>, Stream, Int32, Boolean)
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.SerializeListToStream<T>(System.Collections.Generic.IEnumerable<T>, System.IO.Stream, System.Int32, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/DotNetHelper.Serialization.Json/DataSourceJson.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Json.git
+    id: SerializeListToStream
+    path: ../src/DotNetHelper.Serialization.Json/DataSourceJson.cs
+    startLine: 152
+  assemblies:
+  - DotNetHelper.Serialization.Json
+  namespace: DotNetHelper.Serialization.Json
+  syntax:
+    content: >-
+      public void SerializeListToStream<T>(IEnumerable<T> objects, Stream stream, int bufferSize = 1024, bool leaveStreamOpen = false)
+          where T : class
+    parameters:
+    - id: objects
+      type: System.Collections.Generic.IEnumerable{{T}}
+    - id: stream
+      type: System.IO.Stream
+    - id: bufferSize
+      type: System.Int32
+    - id: leaveStreamOpen
+      type: System.Boolean
+    typeParameters:
+    - id: T
+    content.vb: Public Sub SerializeListToStream(Of T As Class)(objects As IEnumerable(Of T), stream As Stream, bufferSize As Integer = 1024, leaveStreamOpen As Boolean = False)
+  overload: DotNetHelper.Serialization.Json.DataSourceJson.SerializeListToStream*
+  implements:
+  - DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeListToStream``1(System.Collections.Generic.IEnumerable{{T}},System.IO.Stream,System.Int32,System.Boolean)
+  nameWithType.vb: DataSourceJson.SerializeListToStream(Of T)(IEnumerable(Of T), Stream, Int32, Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: DotNetHelper.Serialization.Json.DataSourceJson.SerializeListToStream(Of T)(System.Collections.Generic.IEnumerable(Of T), System.IO.Stream, System.Int32, System.Boolean)
+  name.vb: SerializeListToStream(Of T)(IEnumerable(Of T), Stream, Int32, Boolean)
 - uid: DotNetHelper.Serialization.Json.DataSourceJson.SerializeToStream(System.Object,System.Type,System.IO.Stream,System.Int32,System.Boolean)
   commentId: M:DotNetHelper.Serialization.Json.DataSourceJson.SerializeToStream(System.Object,System.Type,System.IO.Stream,System.Int32,System.Boolean)
   id: SerializeToStream(System.Object,System.Type,System.IO.Stream,System.Int32,System.Boolean)
@@ -858,7 +909,7 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Json.git
     id: SerializeToStream
     path: ../src/DotNetHelper.Serialization.Json/DataSourceJson.cs
-    startLine: 150
+    startLine: 165
   assemblies:
   - DotNetHelper.Serialization.Json
   namespace: DotNetHelper.Serialization.Json
@@ -883,16 +934,16 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: DotNetHelper.Serialization.Json.DataSourceJson.SerializeToStream``1(``0,System.Int32,System.Boolean)
-  commentId: M:DotNetHelper.Serialization.Json.DataSourceJson.SerializeToStream``1(``0,System.Int32,System.Boolean)
-  id: SerializeToStream``1(``0,System.Int32,System.Boolean)
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.SerializeToStream``1(``0,System.Int32)
+  commentId: M:DotNetHelper.Serialization.Json.DataSourceJson.SerializeToStream``1(``0,System.Int32)
+  id: SerializeToStream``1(``0,System.Int32)
   parent: DotNetHelper.Serialization.Json.DataSourceJson
   langs:
   - csharp
   - vb
-  name: SerializeToStream<T>(T, Int32, Boolean)
-  nameWithType: DataSourceJson.SerializeToStream<T>(T, Int32, Boolean)
-  fullName: DotNetHelper.Serialization.Json.DataSourceJson.SerializeToStream<T>(T, System.Int32, System.Boolean)
+  name: SerializeToStream<T>(T, Int32)
+  nameWithType: DataSourceJson.SerializeToStream<T>(T, Int32)
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.SerializeToStream<T>(T, System.Int32)
   type: Method
   source:
     remote:
@@ -901,46 +952,90 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Json.git
     id: SerializeToStream
     path: ../src/DotNetHelper.Serialization.Json/DataSourceJson.cs
-    startLine: 160
+    startLine: 175
   assemblies:
   - DotNetHelper.Serialization.Json
   namespace: DotNetHelper.Serialization.Json
   syntax:
     content: >-
-      public Stream SerializeToStream<T>(T obj, int bufferSize = 1024, bool leaveStreamOpen = false)
+      public Stream SerializeToStream<T>(T obj, int bufferSize = 1024)
           where T : class
     parameters:
     - id: obj
       type: '{T}'
     - id: bufferSize
       type: System.Int32
-    - id: leaveStreamOpen
-      type: System.Boolean
     typeParameters:
     - id: T
     return:
       type: System.IO.Stream
-    content.vb: Public Function SerializeToStream(Of T As Class)(obj As T, bufferSize As Integer = 1024, leaveStreamOpen As Boolean = False) As Stream
+    content.vb: Public Function SerializeToStream(Of T As Class)(obj As T, bufferSize As Integer = 1024) As Stream
   overload: DotNetHelper.Serialization.Json.DataSourceJson.SerializeToStream*
   implements:
-  - DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream``1({T},System.Int32,System.Boolean)
-  nameWithType.vb: DataSourceJson.SerializeToStream(Of T)(T, Int32, Boolean)
+  - DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream``1({T},System.Int32)
+  nameWithType.vb: DataSourceJson.SerializeToStream(Of T)(T, Int32)
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
-  fullName.vb: DotNetHelper.Serialization.Json.DataSourceJson.SerializeToStream(Of T)(T, System.Int32, System.Boolean)
-  name.vb: SerializeToStream(Of T)(T, Int32, Boolean)
-- uid: DotNetHelper.Serialization.Json.DataSourceJson.SerializeToStream(System.Object,System.Type,System.Int32,System.Boolean)
-  commentId: M:DotNetHelper.Serialization.Json.DataSourceJson.SerializeToStream(System.Object,System.Type,System.Int32,System.Boolean)
-  id: SerializeToStream(System.Object,System.Type,System.Int32,System.Boolean)
+  fullName.vb: DotNetHelper.Serialization.Json.DataSourceJson.SerializeToStream(Of T)(T, System.Int32)
+  name.vb: SerializeToStream(Of T)(T, Int32)
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.SerializeListToStream``1(System.Collections.Generic.IEnumerable{``0},System.Int32)
+  commentId: M:DotNetHelper.Serialization.Json.DataSourceJson.SerializeListToStream``1(System.Collections.Generic.IEnumerable{``0},System.Int32)
+  id: SerializeListToStream``1(System.Collections.Generic.IEnumerable{``0},System.Int32)
   parent: DotNetHelper.Serialization.Json.DataSourceJson
   langs:
   - csharp
   - vb
-  name: SerializeToStream(Object, Type, Int32, Boolean)
-  nameWithType: DataSourceJson.SerializeToStream(Object, Type, Int32, Boolean)
-  fullName: DotNetHelper.Serialization.Json.DataSourceJson.SerializeToStream(System.Object, System.Type, System.Int32, System.Boolean)
+  name: SerializeListToStream<T>(IEnumerable<T>, Int32)
+  nameWithType: DataSourceJson.SerializeListToStream<T>(IEnumerable<T>, Int32)
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.SerializeListToStream<T>(System.Collections.Generic.IEnumerable<T>, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/DotNetHelper.Serialization.Json/DataSourceJson.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Json.git
+    id: SerializeListToStream
+    path: ../src/DotNetHelper.Serialization.Json/DataSourceJson.cs
+    startLine: 187
+  assemblies:
+  - DotNetHelper.Serialization.Json
+  namespace: DotNetHelper.Serialization.Json
+  syntax:
+    content: >-
+      public Stream SerializeListToStream<T>(IEnumerable<T> objects, int bufferSize = 1024)
+          where T : class
+    parameters:
+    - id: objects
+      type: System.Collections.Generic.IEnumerable{{T}}
+    - id: bufferSize
+      type: System.Int32
+    typeParameters:
+    - id: T
+    return:
+      type: System.IO.Stream
+    content.vb: Public Function SerializeListToStream(Of T As Class)(objects As IEnumerable(Of T), bufferSize As Integer = 1024) As Stream
+  overload: DotNetHelper.Serialization.Json.DataSourceJson.SerializeListToStream*
+  implements:
+  - DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeListToStream``1(System.Collections.Generic.IEnumerable{{T}},System.Int32)
+  nameWithType.vb: DataSourceJson.SerializeListToStream(Of T)(IEnumerable(Of T), Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: DotNetHelper.Serialization.Json.DataSourceJson.SerializeListToStream(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Int32)
+  name.vb: SerializeListToStream(Of T)(IEnumerable(Of T), Int32)
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.SerializeToStream(System.Object,System.Type,System.Int32)
+  commentId: M:DotNetHelper.Serialization.Json.DataSourceJson.SerializeToStream(System.Object,System.Type,System.Int32)
+  id: SerializeToStream(System.Object,System.Type,System.Int32)
+  parent: DotNetHelper.Serialization.Json.DataSourceJson
+  langs:
+  - csharp
+  - vb
+  name: SerializeToStream(Object, Type, Int32)
+  nameWithType: DataSourceJson.SerializeToStream(Object, Type, Int32)
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.SerializeToStream(System.Object, System.Type, System.Int32)
   type: Method
   source:
     remote:
@@ -949,12 +1044,12 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Json.git
     id: SerializeToStream
     path: ../src/DotNetHelper.Serialization.Json/DataSourceJson.cs
-    startLine: 172
+    startLine: 199
   assemblies:
   - DotNetHelper.Serialization.Json
   namespace: DotNetHelper.Serialization.Json
   syntax:
-    content: public Stream SerializeToStream(object obj, Type type, int bufferSize = 1024, bool leaveStreamOpen = false)
+    content: public Stream SerializeToStream(object obj, Type type, int bufferSize = 1024)
     parameters:
     - id: obj
       type: System.Object
@@ -962,14 +1057,12 @@ items:
       type: System.Type
     - id: bufferSize
       type: System.Int32
-    - id: leaveStreamOpen
-      type: System.Boolean
     return:
       type: System.IO.Stream
-    content.vb: Public Function SerializeToStream(obj As Object, type As Type, bufferSize As Integer = 1024, leaveStreamOpen As Boolean = False) As Stream
+    content.vb: Public Function SerializeToStream(obj As Object, type As Type, bufferSize As Integer = 1024) As Stream
   overload: DotNetHelper.Serialization.Json.DataSourceJson.SerializeToStream*
   implements:
-  - DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(System.Object,System.Type,System.Int32,System.Boolean)
+  - DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(System.Object,System.Type,System.Int32)
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -992,7 +1085,7 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Json.git
     id: SerializeToString
     path: ../src/DotNetHelper.Serialization.Json/DataSourceJson.cs
-    startLine: 184
+    startLine: 211
   assemblies:
   - DotNetHelper.Serialization.Json
   namespace: DotNetHelper.Serialization.Json
@@ -1029,7 +1122,7 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Json.git
     id: SerializeToString
     path: ../src/DotNetHelper.Serialization.Json/DataSourceJson.cs
-    startLine: 190
+    startLine: 217
   assemblies:
   - DotNetHelper.Serialization.Json
   namespace: DotNetHelper.Serialization.Json
@@ -1055,6 +1148,50 @@ items:
   - Public
   fullName.vb: DotNetHelper.Serialization.Json.DataSourceJson.SerializeToString(Of T)(T)
   name.vb: SerializeToString(Of T)(T)
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.SerializeListToString``1(System.Collections.Generic.IEnumerable{``0})
+  commentId: M:DotNetHelper.Serialization.Json.DataSourceJson.SerializeListToString``1(System.Collections.Generic.IEnumerable{``0})
+  id: SerializeListToString``1(System.Collections.Generic.IEnumerable{``0})
+  parent: DotNetHelper.Serialization.Json.DataSourceJson
+  langs:
+  - csharp
+  - vb
+  name: SerializeListToString<T>(IEnumerable<T>)
+  nameWithType: DataSourceJson.SerializeListToString<T>(IEnumerable<T>)
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.SerializeListToString<T>(System.Collections.Generic.IEnumerable<T>)
+  type: Method
+  source:
+    remote:
+      path: src/DotNetHelper.Serialization.Json/DataSourceJson.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Json.git
+    id: SerializeListToString
+    path: ../src/DotNetHelper.Serialization.Json/DataSourceJson.cs
+    startLine: 222
+  assemblies:
+  - DotNetHelper.Serialization.Json
+  namespace: DotNetHelper.Serialization.Json
+  syntax:
+    content: >-
+      public string SerializeListToString<T>(IEnumerable<T> obj)
+          where T : class
+    parameters:
+    - id: obj
+      type: System.Collections.Generic.IEnumerable{{T}}
+    typeParameters:
+    - id: T
+    return:
+      type: System.String
+    content.vb: Public Function SerializeListToString(Of T As Class)(obj As IEnumerable(Of T)) As String
+  overload: DotNetHelper.Serialization.Json.DataSourceJson.SerializeListToString*
+  implements:
+  - DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeListToString``1(System.Collections.Generic.IEnumerable{{T}})
+  nameWithType.vb: DataSourceJson.SerializeListToString(Of T)(IEnumerable(Of T))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: DotNetHelper.Serialization.Json.DataSourceJson.SerializeListToString(Of T)(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: SerializeListToString(Of T)(IEnumerable(Of T))
 - uid: DotNetHelper.Serialization.Json.DataSourceJson.SerializeToXml(System.String)
   commentId: M:DotNetHelper.Serialization.Json.DataSourceJson.SerializeToXml(System.String)
   id: SerializeToXml(System.String)
@@ -1073,7 +1210,7 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Json.git
     id: SerializeToXml
     path: ../src/DotNetHelper.Serialization.Json/DataSourceJson.cs
-    startLine: 196
+    startLine: 228
   assemblies:
   - DotNetHelper.Serialization.Json
   namespace: DotNetHelper.Serialization.Json
@@ -1108,7 +1245,7 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Json.git
     id: ToBoolean
     path: ../src/DotNetHelper.Serialization.Json/DataSourceJson.cs
-    startLine: 210
+    startLine: 242
   assemblies:
   - DotNetHelper.Serialization.Json
   namespace: DotNetHelper.Serialization.Json
@@ -1145,7 +1282,7 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Json.git
     id: ToByte
     path: ../src/DotNetHelper.Serialization.Json/DataSourceJson.cs
-    startLine: 215
+    startLine: 247
   assemblies:
   - DotNetHelper.Serialization.Json
   namespace: DotNetHelper.Serialization.Json
@@ -1182,7 +1319,7 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Json.git
     id: ToChar
     path: ../src/DotNetHelper.Serialization.Json/DataSourceJson.cs
-    startLine: 220
+    startLine: 252
   assemblies:
   - DotNetHelper.Serialization.Json
   namespace: DotNetHelper.Serialization.Json
@@ -1219,7 +1356,7 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Json.git
     id: ToDateTime
     path: ../src/DotNetHelper.Serialization.Json/DataSourceJson.cs
-    startLine: 225
+    startLine: 257
   assemblies:
   - DotNetHelper.Serialization.Json
   namespace: DotNetHelper.Serialization.Json
@@ -1256,7 +1393,7 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Json.git
     id: ToDecimal
     path: ../src/DotNetHelper.Serialization.Json/DataSourceJson.cs
-    startLine: 230
+    startLine: 262
   assemblies:
   - DotNetHelper.Serialization.Json
   namespace: DotNetHelper.Serialization.Json
@@ -1293,7 +1430,7 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Json.git
     id: ToDouble
     path: ../src/DotNetHelper.Serialization.Json/DataSourceJson.cs
-    startLine: 235
+    startLine: 267
   assemblies:
   - DotNetHelper.Serialization.Json
   namespace: DotNetHelper.Serialization.Json
@@ -1330,7 +1467,7 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Json.git
     id: ToInt16
     path: ../src/DotNetHelper.Serialization.Json/DataSourceJson.cs
-    startLine: 240
+    startLine: 272
   assemblies:
   - DotNetHelper.Serialization.Json
   namespace: DotNetHelper.Serialization.Json
@@ -1367,7 +1504,7 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Json.git
     id: ToInt32
     path: ../src/DotNetHelper.Serialization.Json/DataSourceJson.cs
-    startLine: 245
+    startLine: 277
   assemblies:
   - DotNetHelper.Serialization.Json
   namespace: DotNetHelper.Serialization.Json
@@ -1404,7 +1541,7 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Json.git
     id: ToInt64
     path: ../src/DotNetHelper.Serialization.Json/DataSourceJson.cs
-    startLine: 250
+    startLine: 282
   assemblies:
   - DotNetHelper.Serialization.Json
   namespace: DotNetHelper.Serialization.Json
@@ -1441,7 +1578,7 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Json.git
     id: ToSByte
     path: ../src/DotNetHelper.Serialization.Json/DataSourceJson.cs
-    startLine: 255
+    startLine: 287
   assemblies:
   - DotNetHelper.Serialization.Json
   namespace: DotNetHelper.Serialization.Json
@@ -1478,7 +1615,7 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Json.git
     id: ToSingle
     path: ../src/DotNetHelper.Serialization.Json/DataSourceJson.cs
-    startLine: 260
+    startLine: 292
   assemblies:
   - DotNetHelper.Serialization.Json
   namespace: DotNetHelper.Serialization.Json
@@ -1515,7 +1652,7 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Json.git
     id: ToString
     path: ../src/DotNetHelper.Serialization.Json/DataSourceJson.cs
-    startLine: 265
+    startLine: 297
   assemblies:
   - DotNetHelper.Serialization.Json
   namespace: DotNetHelper.Serialization.Json
@@ -1552,7 +1689,7 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Json.git
     id: ToType
     path: ../src/DotNetHelper.Serialization.Json/DataSourceJson.cs
-    startLine: 270
+    startLine: 302
   assemblies:
   - DotNetHelper.Serialization.Json
   namespace: DotNetHelper.Serialization.Json
@@ -1591,7 +1728,7 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Json.git
     id: ToUInt16
     path: ../src/DotNetHelper.Serialization.Json/DataSourceJson.cs
-    startLine: 275
+    startLine: 307
   assemblies:
   - DotNetHelper.Serialization.Json
   namespace: DotNetHelper.Serialization.Json
@@ -1628,7 +1765,7 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Json.git
     id: ToUInt32
     path: ../src/DotNetHelper.Serialization.Json/DataSourceJson.cs
-    startLine: 280
+    startLine: 312
   assemblies:
   - DotNetHelper.Serialization.Json
   namespace: DotNetHelper.Serialization.Json
@@ -1665,7 +1802,7 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Json.git
     id: ToUInt64
     path: ../src/DotNetHelper.Serialization.Json/DataSourceJson.cs
-    startLine: 285
+    startLine: 317
   assemblies:
   - DotNetHelper.Serialization.Json
   namespace: DotNetHelper.Serialization.Json
@@ -3121,6 +3258,309 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.SerializeListToStream*
+  commentId: Overload:DotNetHelper.Serialization.Json.DataSourceJson.SerializeListToStream
+  name: SerializeListToStream
+  nameWithType: DataSourceJson.SerializeListToStream
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.SerializeListToStream
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeListToStream``1(System.Collections.Generic.IEnumerable{{T}},System.IO.Stream,System.Int32,System.Boolean)
+  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeListToStream``1(System.Collections.Generic.IEnumerable{``0},System.IO.Stream,System.Int32,System.Boolean)
+  parent: DotNetHelper.Serialization.Abstractions.Interface.ISerializer
+  definition: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeListToStream``1(System.Collections.Generic.IEnumerable{``0},System.IO.Stream,System.Int32,System.Boolean)
+  name: SerializeListToStream<T>(IEnumerable<T>, Stream, Int32, Boolean)
+  nameWithType: ISerializer.SerializeListToStream<T>(IEnumerable<T>, Stream, Int32, Boolean)
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeListToStream<T>(System.Collections.Generic.IEnumerable<T>, System.IO.Stream, System.Int32, System.Boolean)
+  nameWithType.vb: ISerializer.SerializeListToStream(Of T)(IEnumerable(Of T), Stream, Int32, Boolean)
+  fullName.vb: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeListToStream(Of T)(System.Collections.Generic.IEnumerable(Of T), System.IO.Stream, System.Int32, System.Boolean)
+  name.vb: SerializeListToStream(Of T)(IEnumerable(Of T), Stream, Int32, Boolean)
+  spec.csharp:
+  - uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeListToStream``1(System.Collections.Generic.IEnumerable{``0},System.IO.Stream,System.Int32,System.Boolean)
+    name: SerializeListToStream<T>
+    nameWithType: ISerializer.SerializeListToStream<T>
+    fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeListToStream<T>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.IO.Stream
+    name: Stream
+    nameWithType: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeListToStream``1(System.Collections.Generic.IEnumerable{``0},System.IO.Stream,System.Int32,System.Boolean)
+    name: SerializeListToStream(Of T)
+    nameWithType: ISerializer.SerializeListToStream(Of T)
+    fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeListToStream(Of T)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.IO.Stream
+    name: Stream
+    nameWithType: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable{{T}}
+  commentId: T:System.Collections.Generic.IEnumerable{``0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeListToStream``1(System.Collections.Generic.IEnumerable{``0},System.IO.Stream,System.Int32,System.Boolean)
+  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeListToStream``1(System.Collections.Generic.IEnumerable{``0},System.IO.Stream,System.Int32,System.Boolean)
+  isExternal: true
+  name: SerializeListToStream<T>(IEnumerable<T>, Stream, Int32, Boolean)
+  nameWithType: ISerializer.SerializeListToStream<T>(IEnumerable<T>, Stream, Int32, Boolean)
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeListToStream<T>(System.Collections.Generic.IEnumerable<T>, System.IO.Stream, System.Int32, System.Boolean)
+  nameWithType.vb: ISerializer.SerializeListToStream(Of T)(IEnumerable(Of T), Stream, Int32, Boolean)
+  fullName.vb: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeListToStream(Of T)(System.Collections.Generic.IEnumerable(Of T), System.IO.Stream, System.Int32, System.Boolean)
+  name.vb: SerializeListToStream(Of T)(IEnumerable(Of T), Stream, Int32, Boolean)
+  spec.csharp:
+  - uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeListToStream``1(System.Collections.Generic.IEnumerable{``0},System.IO.Stream,System.Int32,System.Boolean)
+    name: SerializeListToStream<T>
+    nameWithType: ISerializer.SerializeListToStream<T>
+    fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeListToStream<T>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.IO.Stream
+    name: Stream
+    nameWithType: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeListToStream``1(System.Collections.Generic.IEnumerable{``0},System.IO.Stream,System.Int32,System.Boolean)
+    name: SerializeListToStream(Of T)
+    nameWithType: ISerializer.SerializeListToStream(Of T)
+    fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeListToStream(Of T)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.IO.Stream
+    name: Stream
+    nameWithType: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
 - uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(System.Object,System.Type,System.IO.Stream,System.Int32,System.Boolean)
   commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(System.Object,System.Type,System.IO.Stream,System.Int32,System.Boolean)
   parent: DotNetHelper.Serialization.Abstractions.Interface.ISerializer
@@ -3226,18 +3666,18 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream``1({T},System.Int32,System.Boolean)
-  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream``1(``0,System.Int32,System.Boolean)
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream``1({T},System.Int32)
+  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream``1(``0,System.Int32)
   parent: DotNetHelper.Serialization.Abstractions.Interface.ISerializer
-  definition: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream``1(``0,System.Int32,System.Boolean)
-  name: SerializeToStream<T>(T, Int32, Boolean)
-  nameWithType: ISerializer.SerializeToStream<T>(T, Int32, Boolean)
-  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream<T>(T, System.Int32, System.Boolean)
-  nameWithType.vb: ISerializer.SerializeToStream(Of T)(T, Int32, Boolean)
-  fullName.vb: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(Of T)(T, System.Int32, System.Boolean)
-  name.vb: SerializeToStream(Of T)(T, Int32, Boolean)
+  definition: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream``1(``0,System.Int32)
+  name: SerializeToStream<T>(T, Int32)
+  nameWithType: ISerializer.SerializeToStream<T>(T, Int32)
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream<T>(T, System.Int32)
+  nameWithType.vb: ISerializer.SerializeToStream(Of T)(T, Int32)
+  fullName.vb: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(Of T)(T, System.Int32)
+  name.vb: SerializeToStream(Of T)(T, Int32)
   spec.csharp:
-  - uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream``1(``0,System.Int32,System.Boolean)
+  - uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream``1(``0,System.Int32)
     name: SerializeToStream<T>
     nameWithType: ISerializer.SerializeToStream<T>
     fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream<T>
@@ -3256,19 +3696,11 @@ references:
     nameWithType: Int32
     fullName: System.Int32
     isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Boolean
-    name: Boolean
-    nameWithType: Boolean
-    fullName: System.Boolean
-    isExternal: true
   - name: )
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream``1(``0,System.Int32,System.Boolean)
+  - uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream``1(``0,System.Int32)
     name: SerializeToStream(Of T)
     nameWithType: ISerializer.SerializeToStream(Of T)
     fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(Of T)
@@ -3287,28 +3719,20 @@ references:
     nameWithType: Int32
     fullName: System.Int32
     isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Boolean
-    name: Boolean
-    nameWithType: Boolean
-    fullName: System.Boolean
-    isExternal: true
   - name: )
     nameWithType: )
     fullName: )
-- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream``1(``0,System.Int32,System.Boolean)
-  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream``1(``0,System.Int32,System.Boolean)
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream``1(``0,System.Int32)
+  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream``1(``0,System.Int32)
   isExternal: true
-  name: SerializeToStream<T>(T, Int32, Boolean)
-  nameWithType: ISerializer.SerializeToStream<T>(T, Int32, Boolean)
-  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream<T>(T, System.Int32, System.Boolean)
-  nameWithType.vb: ISerializer.SerializeToStream(Of T)(T, Int32, Boolean)
-  fullName.vb: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(Of T)(T, System.Int32, System.Boolean)
-  name.vb: SerializeToStream(Of T)(T, Int32, Boolean)
+  name: SerializeToStream<T>(T, Int32)
+  nameWithType: ISerializer.SerializeToStream<T>(T, Int32)
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream<T>(T, System.Int32)
+  nameWithType.vb: ISerializer.SerializeToStream(Of T)(T, Int32)
+  fullName.vb: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(Of T)(T, System.Int32)
+  name.vb: SerializeToStream(Of T)(T, Int32)
   spec.csharp:
-  - uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream``1(``0,System.Int32,System.Boolean)
+  - uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream``1(``0,System.Int32)
     name: SerializeToStream<T>
     nameWithType: ISerializer.SerializeToStream<T>
     fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream<T>
@@ -3327,19 +3751,11 @@ references:
     nameWithType: Int32
     fullName: System.Int32
     isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Boolean
-    name: Boolean
-    nameWithType: Boolean
-    fullName: System.Boolean
-    isExternal: true
   - name: )
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream``1(``0,System.Int32,System.Boolean)
+  - uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream``1(``0,System.Int32)
     name: SerializeToStream(Of T)
     nameWithType: ISerializer.SerializeToStream(Of T)
     fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(Of T)
@@ -3358,26 +3774,173 @@ references:
     nameWithType: Int32
     fullName: System.Int32
     isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeListToStream``1(System.Collections.Generic.IEnumerable{{T}},System.Int32)
+  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeListToStream``1(System.Collections.Generic.IEnumerable{``0},System.Int32)
+  parent: DotNetHelper.Serialization.Abstractions.Interface.ISerializer
+  definition: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeListToStream``1(System.Collections.Generic.IEnumerable{``0},System.Int32)
+  name: SerializeListToStream<T>(IEnumerable<T>, Int32)
+  nameWithType: ISerializer.SerializeListToStream<T>(IEnumerable<T>, Int32)
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeListToStream<T>(System.Collections.Generic.IEnumerable<T>, System.Int32)
+  nameWithType.vb: ISerializer.SerializeListToStream(Of T)(IEnumerable(Of T), Int32)
+  fullName.vb: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeListToStream(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Int32)
+  name.vb: SerializeListToStream(Of T)(IEnumerable(Of T), Int32)
+  spec.csharp:
+  - uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeListToStream``1(System.Collections.Generic.IEnumerable{``0},System.Int32)
+    name: SerializeListToStream<T>
+    nameWithType: ISerializer.SerializeListToStream<T>
+    fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeListToStream<T>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
   - name: ', '
     nameWithType: ', '
     fullName: ', '
-  - uid: System.Boolean
-    name: Boolean
-    nameWithType: Boolean
-    fullName: System.Boolean
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
     isExternal: true
   - name: )
     nameWithType: )
     fullName: )
-- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(System.Object,System.Type,System.Int32,System.Boolean)
-  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(System.Object,System.Type,System.Int32,System.Boolean)
+  spec.vb:
+  - uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeListToStream``1(System.Collections.Generic.IEnumerable{``0},System.Int32)
+    name: SerializeListToStream(Of T)
+    nameWithType: ISerializer.SerializeListToStream(Of T)
+    fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeListToStream(Of T)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeListToStream``1(System.Collections.Generic.IEnumerable{``0},System.Int32)
+  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeListToStream``1(System.Collections.Generic.IEnumerable{``0},System.Int32)
+  isExternal: true
+  name: SerializeListToStream<T>(IEnumerable<T>, Int32)
+  nameWithType: ISerializer.SerializeListToStream<T>(IEnumerable<T>, Int32)
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeListToStream<T>(System.Collections.Generic.IEnumerable<T>, System.Int32)
+  nameWithType.vb: ISerializer.SerializeListToStream(Of T)(IEnumerable(Of T), Int32)
+  fullName.vb: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeListToStream(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Int32)
+  name.vb: SerializeListToStream(Of T)(IEnumerable(Of T), Int32)
+  spec.csharp:
+  - uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeListToStream``1(System.Collections.Generic.IEnumerable{``0},System.Int32)
+    name: SerializeListToStream<T>
+    nameWithType: ISerializer.SerializeListToStream<T>
+    fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeListToStream<T>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeListToStream``1(System.Collections.Generic.IEnumerable{``0},System.Int32)
+    name: SerializeListToStream(Of T)
+    nameWithType: ISerializer.SerializeListToStream(Of T)
+    fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeListToStream(Of T)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(System.Object,System.Type,System.Int32)
+  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(System.Object,System.Type,System.Int32)
   parent: DotNetHelper.Serialization.Abstractions.Interface.ISerializer
   isExternal: true
-  name: SerializeToStream(Object, Type, Int32, Boolean)
-  nameWithType: ISerializer.SerializeToStream(Object, Type, Int32, Boolean)
-  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(System.Object, System.Type, System.Int32, System.Boolean)
+  name: SerializeToStream(Object, Type, Int32)
+  nameWithType: ISerializer.SerializeToStream(Object, Type, Int32)
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(System.Object, System.Type, System.Int32)
   spec.csharp:
-  - uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(System.Object,System.Type,System.Int32,System.Boolean)
+  - uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(System.Object,System.Type,System.Int32)
     name: SerializeToStream
     nameWithType: ISerializer.SerializeToStream
     fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream
@@ -3406,19 +3969,11 @@ references:
     nameWithType: Int32
     fullName: System.Int32
     isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Boolean
-    name: Boolean
-    nameWithType: Boolean
-    fullName: System.Boolean
-    isExternal: true
   - name: )
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(System.Object,System.Type,System.Int32,System.Boolean)
+  - uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(System.Object,System.Type,System.Int32)
     name: SerializeToStream
     nameWithType: ISerializer.SerializeToStream
     fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream
@@ -3446,14 +4001,6 @@ references:
     name: Int32
     nameWithType: Int32
     fullName: System.Int32
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Boolean
-    name: Boolean
-    nameWithType: Boolean
-    fullName: System.Boolean
     isExternal: true
   - name: )
     nameWithType: )
@@ -3580,6 +4127,134 @@ references:
   - name: T
     nameWithType: T
     fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.SerializeListToString*
+  commentId: Overload:DotNetHelper.Serialization.Json.DataSourceJson.SerializeListToString
+  name: SerializeListToString
+  nameWithType: DataSourceJson.SerializeListToString
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.SerializeListToString
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeListToString``1(System.Collections.Generic.IEnumerable{{T}})
+  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeListToString``1(System.Collections.Generic.IEnumerable{``0})
+  parent: DotNetHelper.Serialization.Abstractions.Interface.ISerializer
+  definition: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeListToString``1(System.Collections.Generic.IEnumerable{``0})
+  name: SerializeListToString<T>(IEnumerable<T>)
+  nameWithType: ISerializer.SerializeListToString<T>(IEnumerable<T>)
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeListToString<T>(System.Collections.Generic.IEnumerable<T>)
+  nameWithType.vb: ISerializer.SerializeListToString(Of T)(IEnumerable(Of T))
+  fullName.vb: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeListToString(Of T)(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: SerializeListToString(Of T)(IEnumerable(Of T))
+  spec.csharp:
+  - uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeListToString``1(System.Collections.Generic.IEnumerable{``0})
+    name: SerializeListToString<T>
+    nameWithType: ISerializer.SerializeListToString<T>
+    fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeListToString<T>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeListToString``1(System.Collections.Generic.IEnumerable{``0})
+    name: SerializeListToString(Of T)
+    nameWithType: ISerializer.SerializeListToString(Of T)
+    fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeListToString(Of T)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeListToString``1(System.Collections.Generic.IEnumerable{``0})
+  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeListToString``1(System.Collections.Generic.IEnumerable{``0})
+  isExternal: true
+  name: SerializeListToString<T>(IEnumerable<T>)
+  nameWithType: ISerializer.SerializeListToString<T>(IEnumerable<T>)
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeListToString<T>(System.Collections.Generic.IEnumerable<T>)
+  nameWithType.vb: ISerializer.SerializeListToString(Of T)(IEnumerable(Of T))
+  fullName.vb: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeListToString(Of T)(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: SerializeListToString(Of T)(IEnumerable(Of T))
+  spec.csharp:
+  - uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeListToString``1(System.Collections.Generic.IEnumerable{``0})
+    name: SerializeListToString<T>
+    nameWithType: ISerializer.SerializeListToString<T>
+    fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeListToString<T>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeListToString``1(System.Collections.Generic.IEnumerable{``0})
+    name: SerializeListToString(Of T)
+    nameWithType: ISerializer.SerializeListToString(Of T)
+    fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeListToString(Of T)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
   - name: )
     nameWithType: )
     fullName: )

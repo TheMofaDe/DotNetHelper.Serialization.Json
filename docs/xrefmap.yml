@@ -162,12 +162,53 @@ references:
   isSpec: "True"
   fullName: DotNetHelper.Serialization.Json.DataSourceJson.GetTypeCode
   nameWithType: DataSourceJson.GetTypeCode
-- uid: DotNetHelper.Serialization.Json.DataSourceJson.SerializeToStream(System.Object,System.Type,System.Int32,System.Boolean)
-  name: SerializeToStream(Object, Type, Int32, Boolean)
-  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_SerializeToStream_System_Object_System_Type_System_Int32_System_Boolean_
-  commentId: M:DotNetHelper.Serialization.Json.DataSourceJson.SerializeToStream(System.Object,System.Type,System.Int32,System.Boolean)
-  fullName: DotNetHelper.Serialization.Json.DataSourceJson.SerializeToStream(System.Object, System.Type, System.Int32, System.Boolean)
-  nameWithType: DataSourceJson.SerializeToStream(Object, Type, Int32, Boolean)
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.SerializeListToStream*
+  name: SerializeListToStream
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_SerializeListToStream_
+  commentId: Overload:DotNetHelper.Serialization.Json.DataSourceJson.SerializeListToStream
+  isSpec: "True"
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.SerializeListToStream
+  nameWithType: DataSourceJson.SerializeListToStream
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.SerializeListToStream``1(System.Collections.Generic.IEnumerable{``0},System.Int32)
+  name: SerializeListToStream<T>(IEnumerable<T>, Int32)
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_SerializeListToStream__1_System_Collections_Generic_IEnumerable___0__System_Int32_
+  commentId: M:DotNetHelper.Serialization.Json.DataSourceJson.SerializeListToStream``1(System.Collections.Generic.IEnumerable{``0},System.Int32)
+  name.vb: SerializeListToStream(Of T)(IEnumerable(Of T), Int32)
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.SerializeListToStream<T>(System.Collections.Generic.IEnumerable<T>, System.Int32)
+  fullName.vb: DotNetHelper.Serialization.Json.DataSourceJson.SerializeListToStream(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Int32)
+  nameWithType: DataSourceJson.SerializeListToStream<T>(IEnumerable<T>, Int32)
+  nameWithType.vb: DataSourceJson.SerializeListToStream(Of T)(IEnumerable(Of T), Int32)
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.SerializeListToStream``1(System.Collections.Generic.IEnumerable{``0},System.IO.Stream,System.Int32,System.Boolean)
+  name: SerializeListToStream<T>(IEnumerable<T>, Stream, Int32, Boolean)
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_SerializeListToStream__1_System_Collections_Generic_IEnumerable___0__System_IO_Stream_System_Int32_System_Boolean_
+  commentId: M:DotNetHelper.Serialization.Json.DataSourceJson.SerializeListToStream``1(System.Collections.Generic.IEnumerable{``0},System.IO.Stream,System.Int32,System.Boolean)
+  name.vb: SerializeListToStream(Of T)(IEnumerable(Of T), Stream, Int32, Boolean)
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.SerializeListToStream<T>(System.Collections.Generic.IEnumerable<T>, System.IO.Stream, System.Int32, System.Boolean)
+  fullName.vb: DotNetHelper.Serialization.Json.DataSourceJson.SerializeListToStream(Of T)(System.Collections.Generic.IEnumerable(Of T), System.IO.Stream, System.Int32, System.Boolean)
+  nameWithType: DataSourceJson.SerializeListToStream<T>(IEnumerable<T>, Stream, Int32, Boolean)
+  nameWithType.vb: DataSourceJson.SerializeListToStream(Of T)(IEnumerable(Of T), Stream, Int32, Boolean)
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.SerializeListToString*
+  name: SerializeListToString
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_SerializeListToString_
+  commentId: Overload:DotNetHelper.Serialization.Json.DataSourceJson.SerializeListToString
+  isSpec: "True"
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.SerializeListToString
+  nameWithType: DataSourceJson.SerializeListToString
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.SerializeListToString``1(System.Collections.Generic.IEnumerable{``0})
+  name: SerializeListToString<T>(IEnumerable<T>)
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_SerializeListToString__1_System_Collections_Generic_IEnumerable___0__
+  commentId: M:DotNetHelper.Serialization.Json.DataSourceJson.SerializeListToString``1(System.Collections.Generic.IEnumerable{``0})
+  name.vb: SerializeListToString(Of T)(IEnumerable(Of T))
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.SerializeListToString<T>(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: DotNetHelper.Serialization.Json.DataSourceJson.SerializeListToString(Of T)(System.Collections.Generic.IEnumerable(Of T))
+  nameWithType: DataSourceJson.SerializeListToString<T>(IEnumerable<T>)
+  nameWithType.vb: DataSourceJson.SerializeListToString(Of T)(IEnumerable(Of T))
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.SerializeToStream(System.Object,System.Type,System.Int32)
+  name: SerializeToStream(Object, Type, Int32)
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_SerializeToStream_System_Object_System_Type_System_Int32_
+  commentId: M:DotNetHelper.Serialization.Json.DataSourceJson.SerializeToStream(System.Object,System.Type,System.Int32)
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.SerializeToStream(System.Object, System.Type, System.Int32)
+  nameWithType: DataSourceJson.SerializeToStream(Object, Type, Int32)
 - uid: DotNetHelper.Serialization.Json.DataSourceJson.SerializeToStream(System.Object,System.Type,System.IO.Stream,System.Int32,System.Boolean)
   name: SerializeToStream(Object, Type, Stream, Int32, Boolean)
   href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_SerializeToStream_System_Object_System_Type_System_IO_Stream_System_Int32_System_Boolean_
@@ -181,15 +222,15 @@ references:
   isSpec: "True"
   fullName: DotNetHelper.Serialization.Json.DataSourceJson.SerializeToStream
   nameWithType: DataSourceJson.SerializeToStream
-- uid: DotNetHelper.Serialization.Json.DataSourceJson.SerializeToStream``1(``0,System.Int32,System.Boolean)
-  name: SerializeToStream<T>(T, Int32, Boolean)
-  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_SerializeToStream__1___0_System_Int32_System_Boolean_
-  commentId: M:DotNetHelper.Serialization.Json.DataSourceJson.SerializeToStream``1(``0,System.Int32,System.Boolean)
-  name.vb: SerializeToStream(Of T)(T, Int32, Boolean)
-  fullName: DotNetHelper.Serialization.Json.DataSourceJson.SerializeToStream<T>(T, System.Int32, System.Boolean)
-  fullName.vb: DotNetHelper.Serialization.Json.DataSourceJson.SerializeToStream(Of T)(T, System.Int32, System.Boolean)
-  nameWithType: DataSourceJson.SerializeToStream<T>(T, Int32, Boolean)
-  nameWithType.vb: DataSourceJson.SerializeToStream(Of T)(T, Int32, Boolean)
+- uid: DotNetHelper.Serialization.Json.DataSourceJson.SerializeToStream``1(``0,System.Int32)
+  name: SerializeToStream<T>(T, Int32)
+  href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_SerializeToStream__1___0_System_Int32_
+  commentId: M:DotNetHelper.Serialization.Json.DataSourceJson.SerializeToStream``1(``0,System.Int32)
+  name.vb: SerializeToStream(Of T)(T, Int32)
+  fullName: DotNetHelper.Serialization.Json.DataSourceJson.SerializeToStream<T>(T, System.Int32)
+  fullName.vb: DotNetHelper.Serialization.Json.DataSourceJson.SerializeToStream(Of T)(T, System.Int32)
+  nameWithType: DataSourceJson.SerializeToStream<T>(T, Int32)
+  nameWithType.vb: DataSourceJson.SerializeToStream(Of T)(T, Int32)
 - uid: DotNetHelper.Serialization.Json.DataSourceJson.SerializeToStream``1(``0,System.IO.Stream,System.Int32,System.Boolean)
   name: SerializeToStream<T>(T, Stream, Int32, Boolean)
   href: api/DotNetHelper.Serialization.Json.DataSourceJson.html#DotNetHelper_Serialization_Json_DataSourceJson_SerializeToStream__1___0_System_IO_Stream_System_Int32_System_Boolean_
