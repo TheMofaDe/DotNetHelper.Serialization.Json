@@ -124,7 +124,7 @@ namespace DotNetHelper.Serialization.Json.Tests
 
             var stream = DataSource.SerializeToStream(MockData.Employee, 1024);
             // TODO :: EnsureStreamMatchMockDataJson(stream);
-            EnsureStreamIsDispose(stream);
+            EnsureStreamIsNotDisposeAndIsAtEndOfStream(stream);
         }
 
 
@@ -146,7 +146,7 @@ namespace DotNetHelper.Serialization.Json.Tests
 
             var stream = DataSource.SerializeToStream(MockData.Employee, MockData.Employee.GetType(),1024);
             // TODO :: EnsureStreamMatchMockDataJson(stream);
-            EnsureStreamIsDispose(stream);
+            EnsureStreamIsNotDisposeAndIsAtEndOfStream(stream);
         }
 
 

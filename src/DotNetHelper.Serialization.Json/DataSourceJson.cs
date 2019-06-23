@@ -84,6 +84,8 @@ namespace DotNetHelper.Serialization.Json
             }
         }
 
+    
+
         public List<dynamic> DeserializeToList(string json)
         {
             json.IsNullThrow(nameof(json));
@@ -148,6 +150,19 @@ namespace DotNetHelper.Serialization.Json
             SerializeToStream(obj, typeof(T), stream, bufferSize, leaveStreamOpen);
         }
 
+        public void SerializeListToStream<T>(IEnumerable<T> objects, Stream stream, int bufferSize = 1024, bool leaveStreamOpen = false) where T : class
+        {
+            objects.IsNullThrow(nameof(objects));
+            stream.IsNullThrow(nameof(stream));
+            var memoryStream = new MemoryStream();
+            var serializer = JsonSerializer.Create(Settings);
+            using (var sw = new StreamWriter(memoryStream, Encoding, bufferSize, leaveStreamOpen))
+            using (var jsonTextWriter = new JsonTextWriter(sw))
+            {
+                serializer.Serialize(jsonTextWriter, objects.GetType());
+            }
+        }
+
         public void SerializeToStream(object obj, Type type, Stream stream, int bufferSize = 1024, bool leaveStreamOpen = false)
         {
             var serializer = JsonSerializer.Create(Settings);
@@ -166,6 +181,18 @@ namespace DotNetHelper.Serialization.Json
             using (var jsonTextWriter = new JsonTextWriter(sw))
             {
                 serializer.Serialize(jsonTextWriter, obj);
+            }
+            return memoryStream;
+        }
+
+        public Stream SerializeListToStream<T>(IEnumerable<T> objects, int bufferSize = 1024) where T : class
+        {
+            var serializer = JsonSerializer.Create(Settings);
+            var memoryStream = new MemoryStream();
+            using (var sw = new StreamWriter(memoryStream, Encoding, bufferSize, true))
+            using (var jsonTextWriter = new JsonTextWriter(sw))
+            {
+                serializer.Serialize(jsonTextWriter, objects);
             }
             return memoryStream;
         }
@@ -189,6 +216,11 @@ namespace DotNetHelper.Serialization.Json
         }
 
         public string SerializeToString<T>(T obj) where T : class
+        {
+            obj.IsNullThrow(nameof(obj));
+            return JsonConvert.SerializeObject(obj, Settings);
+        }
+        public string SerializeListToString<T>(IEnumerable<T> obj) where T : class
         {
             obj.IsNullThrow(nameof(obj));
             return JsonConvert.SerializeObject(obj, Settings);
