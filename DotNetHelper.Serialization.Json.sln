@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.28729.10
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetHelper.Serialization.Json", "src\DotNetHelper.Serialization.Json\DotNetHelper.Serialization.Json.csproj", "{79C0FF58-20B0-4C2E-A9EA-7DBD8573C8CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetHelper.Serialization.Json-Tests", "tests\DotNetHelper.Serialization.Json-Tests\DotNetHelper.Serialization.Json-Tests.csproj", "{60C4F1AF-9430-479D-AFAD-1D7BF6276034}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetHelper.Serialization.Json.Tests", "tests\DotNetHelper.Serialization.Json.Tests\DotNetHelper.Serialization.Json.Tests.csproj", "{52A09680-CD69-4F50-8B37-EE597C375024}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{79C0FF58-20B0-4C2E-A9EA-7DBD8573C8CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{79C0FF58-20B0-4C2E-A9EA-7DBD8573C8CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{79C0FF58-20B0-4C2E-A9EA-7DBD8573C8CD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{60C4F1AF-9430-479D-AFAD-1D7BF6276034}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{60C4F1AF-9430-479D-AFAD-1D7BF6276034}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{60C4F1AF-9430-479D-AFAD-1D7BF6276034}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{60C4F1AF-9430-479D-AFAD-1D7BF6276034}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52A09680-CD69-4F50-8B37-EE597C375024}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52A09680-CD69-4F50-8B37-EE597C375024}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52A09680-CD69-4F50-8B37-EE597C375024}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52A09680-CD69-4F50-8B37-EE597C375024}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
