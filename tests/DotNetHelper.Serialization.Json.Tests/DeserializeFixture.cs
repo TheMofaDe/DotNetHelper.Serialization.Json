@@ -129,7 +129,7 @@ namespace DotNetHelper.Serialization.Json.Tests
 
         [Author("Joseph McNeal Jr", "josephmcnealjr@gmail.com")]
         [Test]
-        public void Test_Deserialize_Json_To_Typed_Object_Of_List()
+        public void Test_Deserialize_Json_To_Strongly_Typed_Object_Of_List()
         {
             var employees = DataSource.DeserializeToList(MockData.EmployeeAsJsonList, typeof(List<Employee>));
             var employee = employees.First() as Employee;
