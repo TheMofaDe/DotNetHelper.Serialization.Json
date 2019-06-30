@@ -117,6 +117,20 @@ namespace DotNetHelper.Serialization.Json.Tests
             EnsureStreamIsNotDisposeAndIsAtEndOfStream(stream);
             stream.Seek(0, SeekOrigin.Begin);
         }
+
+
+        [Author("Joseph McNeal Jr", "josephmcnealjr@gmail.com")]
+        [Test]
+        public void Test_Serialize_Generic_List_To_Stream_And_Stream_Wont_Dispose()
+        {
+
+            var stream = Stream.Synchronized(DataSource.SerializeToStream(MockData.EmployeeList, 1024));
+            // TODO :: EnsureStreamMatchMockDataJson(stream);
+            EnsureStreamIsNotDisposeAndIsAtEndOfStream(stream);
+            stream.Seek(0, SeekOrigin.Begin);
+        }
+
+
         [Author("Joseph McNeal Jr", "josephmcnealjr@gmail.com")]
         [Test]
         public void Test_Serialize_Generic_To_Stream_And_Stream_Is_Dispose()
