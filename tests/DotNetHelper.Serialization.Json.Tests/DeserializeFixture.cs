@@ -117,6 +117,17 @@ namespace DotNetHelper.Serialization.Json.Tests
             EnsureFirstNameAndLastNameMatchMockData(dyn.FirstName.ToString(), dyn.LastName.ToString());
         }
 
+
+        [Author("Joseph McNeal Jr", "josephmcnealjr@gmail.com")]
+        [Test]
+        public void Test_Deserialize_Json_To_Typed_Object_Of_List()
+        {
+            var employees = DataSource.Deserialize(MockData.EmployeeAsJsonList, typeof(List<Employee>));
+            var employeesStronglyType = employees as List<Employee>;
+            EnsureFirstNameAndLastNameMatchMockData(employeesStronglyType.First().FirstName,employeesStronglyType.First().LastName);
+        }
+
+
         [Author("Joseph McNeal Jr", "josephmcnealjr@gmail.com")]
         [Test]
         public void Test_Deserialize_Stream_To_Typed_Object_And_Stream_Is_Dispose()

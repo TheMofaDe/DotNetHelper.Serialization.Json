@@ -70,7 +70,7 @@ namespace DotNetHelper.Serialization.Json
         public object Deserialize(string json, Type type)
         {
             json.IsNullThrow(nameof(json));
-            return JsonConvert.DeserializeObject(json, Settings);
+            return JsonConvert.DeserializeObject(json,type);
         }
 
         public object Deserialize(Stream stream, Type type, int bufferSize = 1024, bool leaveStreamOpen = false)
