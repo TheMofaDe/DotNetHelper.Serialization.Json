@@ -2,13 +2,13 @@
 All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
-
-## [0.0.1] - 2019-01-01
+## [1.0.14] - 2019-08-01
 ### Changed
-Fix DeserializeToList overload
+- update dependencies package **DotNetHelper.Serialization.Abstractions**
+- Fix DeserializeToList overload
 ~~~csharp
 public List<object> DeserializeToList(string json, Type type)
 ~~~
 
-[0.0.1]: https://github.com/olivierlacan/keep-a-changelog/releases/tag/v0.0.1
+[1.0.14]: https://github.com/TheMofaDe/DotNetHelper.Serialization.Json/releases/tag/v1.0.14
 
