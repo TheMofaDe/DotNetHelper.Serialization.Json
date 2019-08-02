@@ -8,19 +8,19 @@
     <title>DotNetHelper.Serialization.Json | DotNetHelper.Serialization.Json </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="DotNetHelper.Serialization.Json | DotNetHelper.Serialization.Json ">
-    <meta name="generator" content="docfx 2.41.0.0">
+    <meta name="generator" content="docfx 2.43.1.0">
     
     <link rel="shortcut icon" href="logo/favicon.ico">
     <link rel="stylesheet" href="styles/docfx.vendor.css">
     <link rel="stylesheet" href="styles/docfx.css">
     <link rel="stylesheet" href="styles/main.css">
-    <meta property="docfx:navrel" content="toc">
-    <meta property="docfx:tocrel" content="toc">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta property="docfx:navrel" content="toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
     
     <meta property="docfx:rel" content="">
     
-  </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -50,10 +50,16 @@
                           <a href="index.html" title="Home">Home</a>
                       </li>
                       <li>
-                          <a href="articles/sample.html" title="Articles">Articles</a>
+                          <a href="tutorials/index.html" title="Tutorials">Tutorials</a>
                       </li>
                       <li>
-                          <a href="api/DotNetHelper.Serialization.Json.html" title="API Documentation">API Documentation</a>
+                          <a href="api/%24safeprojectname%24.html" title="API">API</a>
+                      </li>
+                      <li>
+                          <a href="https://github.com/TheMofaDe/$safeprojectname$/blob/master/CHANGELOG.md" title="Change Log">Change Log</a>
+                      </li>
+                      <li>
+                          <a href="https://github.com/TheMofaDe/$safeprojectname$" title="Github">Github</a>
                       </li>
                 </ul>    </div>
           </div>
@@ -83,14 +89,60 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="dotnethelperserializationjson">DotNetHelper.Serialization.Json</h1>
 
-<p>Description</p>
+<h4 id="dotnethelperserializationjson-is-a-lightweight-serialization-library-for-json"><em>DotNetHelper.Serialization.Json is a lightweight serialization library for json.</em></h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Package</th>
+<th style="text-align: center;">Tests</th>
+<th style="text-align: center;">Code Coverage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><img src="https://img.shields.io/nuget/dt/DotNetHelper.Serialization.Json.svg?style=flat-square" alt="Build Status"></td>
+<td style="text-align: center;"><img src="https://img.shields.io/appveyor/tests/TheMofaDe/DotNetHelper.Serialization.Json.svg?style=flat-square" alt="Build Status"></td>
+<td style="text-align: center;"><a href="https://codecov.io/gh/TheMofaDe/DotNetHelper.Serialization.Json"><img src="https://codecov.io/gh/TheMofaDe/DotNetHelper.Serialization.Json/branch/master/graph/badge.svg" alt="codecov"></a></td>
+</tr>
+</tbody>
+</table>
 <h2 id="how-to-use">How to use</h2>
-<pre><code class="lang-csharp">// code snippet
+<pre><code class="lang-csharp">var jsonSerializer = new DataSourceJson(); 
 </code></pre>
-<h2 id="targeted-net-frameworks">Targeted .NET Frameworks</h2>
-<pre><code>NET452
-NETSTANDARD2.0
+<p>Now you have access to all the Apis you will ever need for a json serializer  check them out</p>
+<pre><code class="lang-csharp">        
+        //Serialize an object to the provided stream
+        void SerializeToStream&lt;T&gt;(T obj, Stream stream, int bufferSize = 1024, bool leaveStreamOpen = false) where T : class;
+        void SerializeToStream(object obj, Type type, Stream stream, int bufferSize = 1024, bool leaveStreamOpen = false);
+
+        //Serialize an object to a new instance of a stream and returns the stream
+        Stream SerializeToStream&lt;T&gt;(T obj, int bufferSize = 1024) where T : class;
+        Stream SerializeToStream(object obj, Type type,  int bufferSize = 1024);
+
+        //Serialize an object to a string
+        string SerializeToString(object obj);
+        string SerializeToString&lt;T&gt;(T obj) where T : class;
+
+        //Retrieve a list of either generics,objects,or dynamics from either a stream or string
+        List&lt;dynamic&gt; DeserializeToList(string content);
+        List&lt;dynamic&gt; DeserializeToList(Stream stream, int bufferSize = 1024, bool leaveStreamOpen = false);
+        List&lt;T&gt; DeserializeToList&lt;T&gt;(string content) where T : class;
+        List&lt;T&gt; DeserializeToList&lt;T&gt;(Stream stream, int bufferSize = 1024, bool leaveStreamOpen = false) where T : class;
+        List&lt;object&gt; DeserializeToList(string content, Type type);
+
+        //Retrieve a dynamic object from String or stream
+        dynamic Deserialize(string content);
+        dynamic Deserialize(Stream stream, int bufferSize = 1024, bool leaveStreamOpen = false);
+
+        //Retrieve a strongly type from a string or stream
+        T Deserialize&lt;T&gt;(string content) where T : class;
+        T Deserialize&lt;T&gt;(Stream stream, int bufferSize = 1024, bool leaveStreamOpen = false) where T : class;
+        
+        //Retrieve a object from a string or stream
+        object Deserialize(string content, Type type);        
+        object Deserialize(Stream stream, Type type, int bufferSize = 1024, bool leaveStreamOpen = false);
 </code></pre>
+<!-- Links. -->
 </article>
           </div>
           
@@ -118,7 +170,7 @@ NETSTANDARD2.0
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            Copyright � 2019 Joseph McNeal Jr
+            Copyright © 2019  <strong>Joseph McNeal Jr</strong>
             
           </div>
         </div>

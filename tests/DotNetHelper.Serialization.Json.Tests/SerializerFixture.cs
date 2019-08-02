@@ -13,7 +13,7 @@ namespace DotNetHelper.Serialization.Json.Tests
     [TestFixture]
     [NonParallelizable] //since were sharing a single file across multiple test cases we don't want Parallelizable
     public class JsonSerializerTextFixture 
-    {
+    {    
         
 
         public DataSourceJson DataSource { get; set; } = new DataSourceJson();
@@ -70,17 +70,19 @@ namespace DotNetHelper.Serialization.Json.Tests
         {
             var stream = new MemoryStream();
             DataSource.SerializeToStream(MockData.Employee,stream,1024,true);
-            // TODO :: EnsureStreamMatchMockDataJson(stream);
+            EnsureStreamMatchMockDataJson(stream,MockData.GetEmployeeAsStream(DataSource.Encoding));
             EnsureStreamIsNotDisposeAndIsAtEndOfStream(stream);
             stream.Seek(0, SeekOrigin.Begin);
         }
+
+  
+
         [Author("Joseph McNeal Jr", "josephmcnealjr@gmail.com")]
         [Test]
         public void Test_Serialize_Generic_To_My_Stream_And_Stream_Is_Dispose()
         {
             var stream = new MemoryStream();
             DataSource.SerializeToStream(MockData.Employee, stream, 1024, false);
-            // TODO :: EnsureStreamMatchMockDataJson(stream);
             EnsureStreamIsDispose(stream);
         }
 
@@ -90,7 +92,7 @@ namespace DotNetHelper.Serialization.Json.Tests
         {
             var stream = new MemoryStream();
             DataSource.SerializeToStream(MockData.Employee,typeof(Employee), stream, 1024, true);
-            // TODO :: EnsureStreamMatchMockDataJson(stream);
+            EnsureStreamMatchMockDataJson(stream, MockData.GetEmployeeAsStream(DataSource.Encoding));
             EnsureStreamIsNotDisposeAndIsAtEndOfStream(stream);
             stream.Seek(0, SeekOrigin.Begin);
         }
@@ -100,7 +102,6 @@ namespace DotNetHelper.Serialization.Json.Tests
         {
             var stream = new MemoryStream();
             DataSource.SerializeToStream(MockData.Employee, typeof(Employee), stream, 1024, false);
-            // TODO :: EnsureStreamMatchMockDataJson(stream);
             EnsureStreamIsDispose(stream);
         }
 
@@ -113,7 +114,7 @@ namespace DotNetHelper.Serialization.Json.Tests
         {
 
             var stream = Stream.Synchronized(DataSource.SerializeToStream(MockData.Employee, 1024));
-            // TODO :: EnsureStreamMatchMockDataJson(stream);
+            EnsureStreamMatchMockDataJson(stream, MockData.GetEmployeeAsStream(DataSource.Encoding));
             EnsureStreamIsNotDisposeAndIsAtEndOfStream(stream);
             stream.Seek(0, SeekOrigin.Begin);
         }
@@ -125,7 +126,7 @@ namespace DotNetHelper.Serialization.Json.Tests
         {
 
             var stream = Stream.Synchronized(DataSource.SerializeToStream(MockData.EmployeeList, 1024));
-            // TODO :: EnsureStreamMatchMockDataJson(stream);
+            EnsureStreamMatchMockDataJson(stream,MockData.GetEmployeeListAsStream(DataSource.Encoding));
             EnsureStreamIsNotDisposeAndIsAtEndOfStream(stream);
             stream.Seek(0, SeekOrigin.Begin);
         }
@@ -137,7 +138,7 @@ namespace DotNetHelper.Serialization.Json.Tests
         {
 
             var stream = DataSource.SerializeToStream(MockData.Employee, 1024);
-            // TODO :: EnsureStreamMatchMockDataJson(stream);
+            EnsureStreamMatchMockDataJson(stream, MockData.GetEmployeeAsStream(DataSource.Encoding));
             EnsureStreamIsNotDisposeAndIsAtEndOfStream(stream);
         }
 
@@ -149,7 +150,7 @@ namespace DotNetHelper.Serialization.Json.Tests
         {
 
             var stream = Stream.Synchronized(DataSource.SerializeToStream(MockData.Employee,MockData.Employee.GetType(), 1024));
-            // TODO :: EnsureStreamMatchMockDataJson(stream);
+            EnsureStreamMatchMockDataJson(stream, MockData.GetEmployeeAsStream(DataSource.Encoding));
             EnsureStreamIsNotDisposeAndIsAtEndOfStream(stream);
             stream.Seek(0, SeekOrigin.Begin);
         }
@@ -159,7 +160,7 @@ namespace DotNetHelper.Serialization.Json.Tests
         {
 
             var stream = DataSource.SerializeToStream(MockData.Employee, MockData.Employee.GetType(),1024);
-            // TODO :: EnsureStreamMatchMockDataJson(stream);
+            EnsureStreamMatchMockDataJson(stream, MockData.GetEmployeeAsStream(DataSource.Encoding));
             EnsureStreamIsNotDisposeAndIsAtEndOfStream(stream);
         }
 
@@ -204,6 +205,12 @@ namespace DotNetHelper.Serialization.Json.Tests
         }
 
 
+        private void EnsureStreamMatchMockDataJson(Stream stream,Stream streamToMatch)
+        {
+            stream.Seek(0, SeekOrigin.Begin);
+            Assert.IsTrue(CompareStreams(stream, streamToMatch),"Stream doesn't match");
+        }
+
 
         private bool CompareStreams(Stream a, Stream b)
         {
@@ -217,18 +224,21 @@ namespace DotNetHelper.Serialization.Json.Tests
                     a == null ? "a" : "b");
             }
 
-            if (a.Length < b.Length)
-                return false;
-            if (a.Length > b.Length)
-                return false;
+            var c = new StreamReader(a, DataSource.Encoding).ReadToEnd();
+            var d = new StreamReader(b, DataSource.Encoding).ReadToEnd();
+            return c.Equals(d, StringComparison.CurrentCulture);
+            //if (a.Length < b.Length)
+            //    return false;
+            //if (a.Length > b.Length)
+            //    return false;
 
-            for (int i = 0; i < a.Length; i++)
-            {
-                int aByte = a.ReadByte();
-                int bByte = b.ReadByte();
-                if (aByte.CompareTo(bByte) != 0)
-                    return false;
-            }
+            //for (int i = 0; i < b.Length; i++)
+            //{
+            //    int aByte = a.ReadByte();
+            //    int bByte = b.ReadByte();
+            //    if (aByte.CompareTo(bByte) != 0)
+            //        return false;
+            //}
 
             return true;
         }

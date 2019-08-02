@@ -124,7 +124,9 @@ namespace DotNetHelper.Serialization.Json
         public List<object> DeserializeToList(string json, Type type)
         {
             json.IsNullThrow(nameof(json));
-            return JsonConvert.DeserializeObject(json, type) as List<object>;
+            var obj = JsonConvert.DeserializeObject(json, type);
+            var list = obj as IEnumerable<object>;
+            return list.AsList();
         }
 
         public List<object> DeserializeToList(Stream stream, Type type, int bufferSize = 1024, bool leaveStreamOpen = false)

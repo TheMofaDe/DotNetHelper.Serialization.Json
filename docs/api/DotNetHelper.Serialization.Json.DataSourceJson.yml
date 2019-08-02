@@ -738,7 +738,7 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Json.git
     id: DeserializeToList
     path: ../src/DotNetHelper.Serialization.Json/DataSourceJson.cs
-    startLine: 129
+    startLine: 131
   assemblies:
   - DotNetHelper.Serialization.Json
   namespace: DotNetHelper.Serialization.Json
@@ -779,7 +779,7 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Json.git
     id: GetTypeCode
     path: ../src/DotNetHelper.Serialization.Json/DataSourceJson.cs
-    startLine: 140
+    startLine: 142
   assemblies:
   - DotNetHelper.Serialization.Json
   namespace: DotNetHelper.Serialization.Json
@@ -813,7 +813,7 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Json.git
     id: SerializeToStream
     path: ../src/DotNetHelper.Serialization.Json/DataSourceJson.cs
-    startLine: 145
+    startLine: 147
   assemblies:
   - DotNetHelper.Serialization.Json
   namespace: DotNetHelper.Serialization.Json
@@ -861,7 +861,7 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Json.git
     id: SerializeListToStream
     path: ../src/DotNetHelper.Serialization.Json/DataSourceJson.cs
-    startLine: 152
+    startLine: 154
   assemblies:
   - DotNetHelper.Serialization.Json
   namespace: DotNetHelper.Serialization.Json
@@ -909,7 +909,7 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Json.git
     id: SerializeToStream
     path: ../src/DotNetHelper.Serialization.Json/DataSourceJson.cs
-    startLine: 165
+    startLine: 167
   assemblies:
   - DotNetHelper.Serialization.Json
   namespace: DotNetHelper.Serialization.Json
@@ -952,7 +952,7 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Json.git
     id: SerializeToStream
     path: ../src/DotNetHelper.Serialization.Json/DataSourceJson.cs
-    startLine: 175
+    startLine: 177
   assemblies:
   - DotNetHelper.Serialization.Json
   namespace: DotNetHelper.Serialization.Json
@@ -998,7 +998,7 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Json.git
     id: SerializeListToStream
     path: ../src/DotNetHelper.Serialization.Json/DataSourceJson.cs
-    startLine: 187
+    startLine: 189
   assemblies:
   - DotNetHelper.Serialization.Json
   namespace: DotNetHelper.Serialization.Json
@@ -1044,7 +1044,7 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Json.git
     id: SerializeToStream
     path: ../src/DotNetHelper.Serialization.Json/DataSourceJson.cs
-    startLine: 199
+    startLine: 201
   assemblies:
   - DotNetHelper.Serialization.Json
   namespace: DotNetHelper.Serialization.Json
@@ -1085,7 +1085,7 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Json.git
     id: SerializeToString
     path: ../src/DotNetHelper.Serialization.Json/DataSourceJson.cs
-    startLine: 211
+    startLine: 213
   assemblies:
   - DotNetHelper.Serialization.Json
   namespace: DotNetHelper.Serialization.Json
@@ -1122,7 +1122,7 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Json.git
     id: SerializeToString
     path: ../src/DotNetHelper.Serialization.Json/DataSourceJson.cs
-    startLine: 217
+    startLine: 219
   assemblies:
   - DotNetHelper.Serialization.Json
   namespace: DotNetHelper.Serialization.Json
@@ -1166,7 +1166,7 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Json.git
     id: SerializeListToString
     path: ../src/DotNetHelper.Serialization.Json/DataSourceJson.cs
-    startLine: 222
+    startLine: 224
   assemblies:
   - DotNetHelper.Serialization.Json
   namespace: DotNetHelper.Serialization.Json
@@ -1210,7 +1210,7 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Json.git
     id: SerializeToXml
     path: ../src/DotNetHelper.Serialization.Json/DataSourceJson.cs
-    startLine: 228
+    startLine: 230
   assemblies:
   - DotNetHelper.Serialization.Json
   namespace: DotNetHelper.Serialization.Json
@@ -1245,7 +1245,7 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Json.git
     id: ToBoolean
     path: ../src/DotNetHelper.Serialization.Json/DataSourceJson.cs
-    startLine: 242
+    startLine: 244
   assemblies:
   - DotNetHelper.Serialization.Json
   namespace: DotNetHelper.Serialization.Json
@@ -1282,7 +1282,7 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Json.git
     id: ToByte
     path: ../src/DotNetHelper.Serialization.Json/DataSourceJson.cs
-    startLine: 247
+    startLine: 249
   assemblies:
   - DotNetHelper.Serialization.Json
   namespace: DotNetHelper.Serialization.Json
@@ -1319,7 +1319,7 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Json.git
     id: ToChar
     path: ../src/DotNetHelper.Serialization.Json/DataSourceJson.cs
-    startLine: 252
+    startLine: 254
   assemblies:
   - DotNetHelper.Serialization.Json
   namespace: DotNetHelper.Serialization.Json
@@ -1356,7 +1356,7 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Json.git
     id: ToDateTime
     path: ../src/DotNetHelper.Serialization.Json/DataSourceJson.cs
-    startLine: 257
+    startLine: 259
   assemblies:
   - DotNetHelper.Serialization.Json
   namespace: DotNetHelper.Serialization.Json
@@ -1393,7 +1393,7 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Json.git
     id: ToDecimal
     path: ../src/DotNetHelper.Serialization.Json/DataSourceJson.cs
-    startLine: 262
+    startLine: 264
   assemblies:
   - DotNetHelper.Serialization.Json
   namespace: DotNetHelper.Serialization.Json
@@ -1430,7 +1430,7 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Json.git
     id: ToDouble
     path: ../src/DotNetHelper.Serialization.Json/DataSourceJson.cs
-    startLine: 267
+    startLine: 269
   assemblies:
   - DotNetHelper.Serialization.Json
   namespace: DotNetHelper.Serialization.Json
@@ -1467,7 +1467,7 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Json.git
     id: ToInt16
     path: ../src/DotNetHelper.Serialization.Json/DataSourceJson.cs
-    startLine: 272
+    startLine: 274
   assemblies:
   - DotNetHelper.Serialization.Json
   namespace: DotNetHelper.Serialization.Json
@@ -1504,7 +1504,7 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Json.git
     id: ToInt32
     path: ../src/DotNetHelper.Serialization.Json/DataSourceJson.cs
-    startLine: 277
+    startLine: 279
   assemblies:
   - DotNetHelper.Serialization.Json
   namespace: DotNetHelper.Serialization.Json
@@ -1541,7 +1541,7 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Json.git
     id: ToInt64
     path: ../src/DotNetHelper.Serialization.Json/DataSourceJson.cs
-    startLine: 282
+    startLine: 284
   assemblies:
   - DotNetHelper.Serialization.Json
   namespace: DotNetHelper.Serialization.Json
@@ -1578,7 +1578,7 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Json.git
     id: ToSByte
     path: ../src/DotNetHelper.Serialization.Json/DataSourceJson.cs
-    startLine: 287
+    startLine: 289
   assemblies:
   - DotNetHelper.Serialization.Json
   namespace: DotNetHelper.Serialization.Json
@@ -1615,7 +1615,7 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Json.git
     id: ToSingle
     path: ../src/DotNetHelper.Serialization.Json/DataSourceJson.cs
-    startLine: 292
+    startLine: 294
   assemblies:
   - DotNetHelper.Serialization.Json
   namespace: DotNetHelper.Serialization.Json
@@ -1652,7 +1652,7 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Json.git
     id: ToString
     path: ../src/DotNetHelper.Serialization.Json/DataSourceJson.cs
-    startLine: 297
+    startLine: 299
   assemblies:
   - DotNetHelper.Serialization.Json
   namespace: DotNetHelper.Serialization.Json
@@ -1689,7 +1689,7 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Json.git
     id: ToType
     path: ../src/DotNetHelper.Serialization.Json/DataSourceJson.cs
-    startLine: 302
+    startLine: 304
   assemblies:
   - DotNetHelper.Serialization.Json
   namespace: DotNetHelper.Serialization.Json
@@ -1728,7 +1728,7 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Json.git
     id: ToUInt16
     path: ../src/DotNetHelper.Serialization.Json/DataSourceJson.cs
-    startLine: 307
+    startLine: 309
   assemblies:
   - DotNetHelper.Serialization.Json
   namespace: DotNetHelper.Serialization.Json
@@ -1765,7 +1765,7 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Json.git
     id: ToUInt32
     path: ../src/DotNetHelper.Serialization.Json/DataSourceJson.cs
-    startLine: 312
+    startLine: 314
   assemblies:
   - DotNetHelper.Serialization.Json
   namespace: DotNetHelper.Serialization.Json
@@ -1802,7 +1802,7 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Json.git
     id: ToUInt64
     path: ../src/DotNetHelper.Serialization.Json/DataSourceJson.cs
-    startLine: 317
+    startLine: 319
   assemblies:
   - DotNetHelper.Serialization.Json
   namespace: DotNetHelper.Serialization.Json

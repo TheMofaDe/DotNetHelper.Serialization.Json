@@ -132,8 +132,9 @@ namespace DotNetHelper.Serialization.Json.Tests
         public void Test_Deserialize_Json_To_Strongly_Typed_Object_Of_List()
         {
             var employees = DataSource.DeserializeToList(MockData.EmployeeAsJsonList, typeof(List<Employee>));
-            var employee = employees.First() as Employee;
-            EnsureFirstNameAndLastNameMatchMockData(employee.FirstName, employee.LastName);
+            if(!employees.Any()) Assert.Fail(" didn't deserialize correctly");
+               var employee = employees.First() as Employee;
+               EnsureFirstNameAndLastNameMatchMockData(employee?.FirstName, employee?.LastName);
         }
 
 
@@ -217,15 +218,6 @@ namespace DotNetHelper.Serialization.Json.Tests
             EnsureDynamicObjectMatchMockData(dyn.First());
             EnsureStreamIsNotDisposeAndIsAtEndOfStream(stream);
         }
-
-
-        //[Author("Joseph McNeal Jr", "josephmcnealjr@gmail.com")]
-        //[Test]
-        //public void Test_Deserialize_Json_To_Typed_Object_List()
-        //{
-        //    var list = DataSource.DeserializeToList(MockData.EmployeeAsJsonList,typeof(List<Employee>));
-        //    EnsureDynamicObjectMatchMockData(list.First());
-        //}
 
         [Author("Joseph McNeal Jr", "josephmcnealjr@gmail.com")]
         [Test]
