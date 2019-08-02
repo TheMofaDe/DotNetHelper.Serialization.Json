@@ -165,7 +165,7 @@ Task("Test")
 			MergeOutput = false
         }     
         .WithFilter("+[*.Tests*]*")
-		.WithFilter("-[*NUnit.*]*")
+		//.WithFilter("-[*NUnit.*]*")
 		);
 
         }
