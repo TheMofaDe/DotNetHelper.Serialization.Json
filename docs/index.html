@@ -50,16 +50,13 @@
                           <a href="index.html" title="Home">Home</a>
                       </li>
                       <li>
-                          <a href="tutorials/index.html" title="Tutorials">Tutorials</a>
+                          <a href="api/DotNetHelper.Serialization.Json.html" title="API">API</a>
                       </li>
                       <li>
-                          <a href="api/%24safeprojectname%24.html" title="API">API</a>
+                          <a href="https://github.com/TheMofaDe/DotNetHelper.Serialization.Json/blob/master/CHANGELOG.md" title="Change Log">Change Log</a>
                       </li>
                       <li>
-                          <a href="https://github.com/TheMofaDe/$safeprojectname$/blob/master/CHANGELOG.md" title="Change Log">Change Log</a>
-                      </li>
-                      <li>
-                          <a href="https://github.com/TheMofaDe/$safeprojectname$" title="Github">Github</a>
+                          <a href="https://github.com/TheMofaDe/DotNetHelper.Serialization.Json" title="Github">Github</a>
                       </li>
                 </ul>    </div>
           </div>
@@ -141,6 +138,31 @@
         //Retrieve a object from a string or stream
         object Deserialize(string content, Type type);        
         object Deserialize(Stream stream, Type type, int bufferSize = 1024, bool leaveStreamOpen = false);
+</code></pre>
+<h2 id="serialization-with-files">Serialization with Files</h2>
+<h4 id="this-example-is-going-to-reference-a-employee-class-and-two-global-variables">This example is going to reference a employee class and two global variables</h4>
+<pre><code class="lang-csharp">public class Employee {
+            public string FirstName { get; set; } = &quot;Jon&quot;;
+            public string LastName { get; set; } = &quot;Last&quot;;
+            public int Id { get; set; }
+}
+
+            var jsonSerializer = new DataSourceJson();
+            var employee = new Employee {Id = 1};
+</code></pre>
+<h4 id="write-single-object-to-file">Write single object to file</h4>
+<pre><code class="lang-csharp">            using (var fileStream = new FileStream($@&quot;C:\Temp\employee.csv&quot;, FileMode.Create, FileAccess.Write))
+                   jsonSerializer.SerializeToStream(employee, fileStream);
+</code></pre>
+<h4 id="write-list-of-objects-to-file">Write list of objects to file</h4>
+<pre><code class="lang-csharp">            using (var fileStream = new FileStream($@&quot;C:\Temp\employeeList.csv&quot;, FileMode.Create, FileAccess.Write))
+                jsonSerializer.SerializeListToStream(new List&lt;Employee&gt;(){employee}, fileStream);
+</code></pre>
+<h4 id="read-single-object-from-file">Read single object from file</h4>
+<pre><code class="lang-csharp">             var employeeFromFile = jsonSerializer.Deserialize&lt;Employee&gt;(new StreamReader($@&quot;C:\Temp\employee.csv&quot;).BaseStream);
+</code></pre>
+<h4 id="read-list-of-objects-from-file">Read list of objects from file</h4>
+<pre><code class="lang-csharp">            var employeesFromFile = jsonSerializer.DeserializeToList&lt;Employee&gt;(new StreamReader($@&quot;C:\Temp\employeeList.csv&quot;).BaseStream);
 </code></pre>
 <!-- Links. -->
 </article>

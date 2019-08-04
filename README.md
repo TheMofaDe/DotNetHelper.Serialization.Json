@@ -55,7 +55,40 @@ Now you have access to all the Apis you will ever need for a json serializer  ch
 ```
 
 
+## Serialization with Files 
 
+
+#### This example is going to reference a employee class and two global variables 
+~~~csharp
+public class Employee {
+            public string FirstName { get; set; } = "Jon";
+            public string LastName { get; set; } = "Last";
+            public int Id { get; set; }
+}
+
+            var jsonSerializer = new DataSourceJson();
+            var employee = new Employee {Id = 1};
+~~~ 
+
+#### Write single object to file
+~~~csharp 
+            using (var fileStream = new FileStream($@"C:\Temp\employee.csv", FileMode.Create, FileAccess.Write))
+                   jsonSerializer.SerializeToStream(employee, fileStream);
+~~~
+#### Write list of objects to file
+~~~csharp 
+            using (var fileStream = new FileStream($@"C:\Temp\employeeList.csv", FileMode.Create, FileAccess.Write))
+                jsonSerializer.SerializeListToStream(new List<Employee>(){employee}, fileStream);
+~~~
+
+#### Read single object from file
+~~~csharp 
+             var employeeFromFile = jsonSerializer.Deserialize<Employee>(new StreamReader($@"C:\Temp\employee.csv").BaseStream);
+~~~
+#### Read list of objects from file
+~~~csharp 
+            var employeesFromFile = jsonSerializer.DeserializeToList<Employee>(new StreamReader($@"C:\Temp\employeeList.csv").BaseStream);
+~~~ 
 
 ## Serialization with Csv
 [CSV LINK][Csv]
