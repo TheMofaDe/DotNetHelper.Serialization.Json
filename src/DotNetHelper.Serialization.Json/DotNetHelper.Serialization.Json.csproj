@@ -4,10 +4,14 @@
     <TargetFrameworks>netstandard2.0;net452;net45</TargetFrameworks>
     <Description>DotNetHelper.Serialization.Json</Description>
     <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
-    <PackageReleaseNotes>initial release</PackageReleaseNotes>
+    <PackageReleaseNotes>https://github.com/TheMofaDe/DotNetHelper.Serialization.Json/blob/master/CHANGELOG.md</PackageReleaseNotes>
     <RepositoryType>git</RepositoryType>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <RepositoryUrl>https://github.com/TheMofaDe/DotNetHelper.Serialization.Json</RepositoryUrl>
+    <PackageIconUrl>https://github.com/TheMofaDe/DotNetHelper.Serialization.Json</PackageIconUrl>
+    <PackageProjectUrl>https://github.com/TheMofaDe/DotNetHelper.Serialization.Json</PackageProjectUrl>
+    <PackageTags>Json,Serializer,dotnethelper,deserialize</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
