@@ -2,10 +2,14 @@
 
   <PropertyGroup>
     <TargetFrameworks>net6.0;net5.0;netstandard2.1;netstandard2.0;net452</TargetFrameworks>
+     <!-- Optional: Build symbol package (.snupkg) to distribute the PDB containing Source Link -->
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="DotNetHelper.Serialization.Abstractions" Version="1.0.11" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All"/>
   </ItemGroup>
 
 	<ItemGroup Condition="'$(TargetFramework)' == 'net452'">

@@ -11,7 +11,7 @@
 
 | Continous Integration | Windows | Linux | MacOS | 
 | :-----: | :-----: | :-----: | :-----: |
-| **AppVeyor** | [![Build status](https://ci.appveyor.com/api/projects/status/9mog32m4mejqyd3i?svg=true)](https://ci.appveyor.com/project/TheMofaDe/dotnethelper-database)  | | |
+| **AppVeyor** | [![Build status](https://ci.appveyor.com/api/projects/status/9mog32m4mejqyd3i?svg=true)](https://ci.appveyor.com/project/themofade/dotnethelper-serialization-json)  | | |
 | **Azure Devops** | ![Build Status][azure-windows]  | ![Build Status][azure-linux]  | ![Build Status][azure-macOS] | 
 
 ## How to use
