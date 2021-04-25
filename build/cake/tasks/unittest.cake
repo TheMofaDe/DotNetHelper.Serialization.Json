@@ -14,7 +14,8 @@ var unitTestTask = Task("UnitTest")
         if(!project.IsTestProject()) // does not support single target .net 5 yet https://github.com/cake-contrib/Cake.Incubator/blob/3858732caa686c9edf16111459869cde2e2694a6/src/Cake.Incubator/Project/ProjectParserExtensions.cs
         continue;
 
-        foreach(var framework in project.TargetFrameworkVersions){
+        var framework = project.TargetFrameworkVersions.First();
+        // foreach(var framework in project.TargetFrameworkVersions){
 
             if(!parameters.IsRunningOnWindows && framework == "net452"){
                 // will always throw 
@@ -62,7 +63,7 @@ var unitTestTask = Task("UnitTest")
             });
             }
 
-        }
+        // }
    } 
     foreach(var framework in frameworks.Distinct())
     {
