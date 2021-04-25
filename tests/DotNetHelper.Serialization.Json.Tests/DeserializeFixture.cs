@@ -10,9 +10,9 @@ namespace DotNetHelper.Serialization.Json.Tests
 {
     [TestFixture]
     [NonParallelizable] //since were sharing a single file across multiple test cases we don't want Parallelizable
-    public class JsonDeserializerTextFixture 
+    public class JsonDeserializerTextFixture
     {
-        
+
 
         public DataSourceJson DataSource { get; set; } = new DataSourceJson();
 
@@ -74,7 +74,7 @@ namespace DotNetHelper.Serialization.Json.Tests
         public void Test_Deserialize_Stream_To_Dynamic_And_Stream_Wont_Dispose()
         {
             var stream = MockData.GetEmployeeAsStream(DataSource.Encoding);
-            var dyn = DataSource.Deserialize(stream,1024,true);
+            var dyn = DataSource.Deserialize(stream, 1024, true);
             EnsureDynamicObjectMatchMockData(dyn);
             EnsureStreamIsNotDisposeAndIsAtEndOfStream(stream);
         }
@@ -104,7 +104,7 @@ namespace DotNetHelper.Serialization.Json.Tests
         public void Test_Deserialize_Stream_To_Generic()
         {
             var stream = MockData.GetEmployeeAsStream(DataSource.Encoding);
-            var dyn = DataSource.Deserialize<Employee>(stream,1024,true);
+            var dyn = DataSource.Deserialize<Employee>(stream, 1024, true);
             EnsureGenericObjectMatchMockData(dyn);
             EnsureStreamIsNotDisposeAndIsAtEndOfStream(stream);
 
@@ -127,7 +127,7 @@ namespace DotNetHelper.Serialization.Json.Tests
         {
             var employees = DataSource.Deserialize(MockData.EmployeeAsJsonList, typeof(List<Employee>));
             var employeesStronglyType = employees as List<Employee>;
-            EnsureFirstNameAndLastNameMatchMockData(employeesStronglyType.First().FirstName,employeesStronglyType.First().LastName);
+            EnsureFirstNameAndLastNameMatchMockData(employeesStronglyType.First().FirstName, employeesStronglyType.First().LastName);
         }
 
         [Author("Joseph McNeal Jr", "josephmcnealjr@gmail.com")]
@@ -135,9 +135,9 @@ namespace DotNetHelper.Serialization.Json.Tests
         public void Test_Deserialize_Json_To_Strongly_Typed_Object_Of_List()
         {
             var employees = DataSource.DeserializeToList(MockData.EmployeeAsJsonList, typeof(List<Employee>));
-            if(!employees.Any()) Assert.Fail(" didn't deserialize correctly");
-               var employee = employees.First() as Employee;
-               EnsureFirstNameAndLastNameMatchMockData(employee?.FirstName, employee?.LastName);
+            if (!employees.Any()) Assert.Fail(" didn't deserialize correctly");
+            var employee = employees.First() as Employee;
+            EnsureFirstNameAndLastNameMatchMockData(employee?.FirstName, employee?.LastName);
         }
 
 
@@ -156,13 +156,13 @@ namespace DotNetHelper.Serialization.Json.Tests
         public void Test_Deserialize_Stream_To_Typed_Object_And_Stream_Wont_Dispose()
         {
             var stream = MockData.GetEmployeeAsStream(DataSource.Encoding);
-            var employee = DataSource.Deserialize(stream, typeof(Employee),1024,true);
+            var employee = DataSource.Deserialize(stream, typeof(Employee), 1024, true);
             dynamic dyn = employee;
             EnsureFirstNameAndLastNameMatchMockData(dyn.FirstName.ToString(), dyn.LastName.ToString());
             EnsureStreamIsNotDisposeAndIsAtEndOfStream(stream);
         }
 
-  
+
 
 
 
@@ -189,7 +189,7 @@ namespace DotNetHelper.Serialization.Json.Tests
         public void Test_Deserialize_Stream_To_Dynamic_List_And_Stream_Wont_Dispose()
         {
             var stream = MockData.GetEmployeeListAsStream(DataSource.Encoding);
-            var dyn = DataSource.DeserializeToList(stream,1024,true);
+            var dyn = DataSource.DeserializeToList(stream, 1024, true);
             EnsureDynamicObjectMatchMockData(dyn.First());
             EnsureStreamIsNotDisposeAndIsAtEndOfStream(stream);
         }
@@ -217,7 +217,7 @@ namespace DotNetHelper.Serialization.Json.Tests
         public void Test_Deserialize_Stream_To_Generic_List_And_Stream_Wont_Dispose()
         {
             var stream = MockData.GetEmployeeListAsStream(DataSource.Encoding);
-            var dyn = DataSource.DeserializeToList<Employee>(stream,1024,true);
+            var dyn = DataSource.DeserializeToList<Employee>(stream, 1024, true);
             EnsureDynamicObjectMatchMockData(dyn.First());
             EnsureStreamIsNotDisposeAndIsAtEndOfStream(stream);
         }
@@ -236,13 +236,13 @@ namespace DotNetHelper.Serialization.Json.Tests
         public void Test_Deserialize_Stream_To_Typed_Object_List_And_Stream_Wont_Dispose()
         {
             var stream = MockData.GetEmployeeListAsStream(DataSource.Encoding);
-            List<dynamic> list = DataSource.DeserializeToList(stream, typeof(List<Employee>),1024,true);
+            List<dynamic> list = DataSource.DeserializeToList(stream, typeof(List<Employee>), 1024, true);
             EnsureFirstNameAndLastNameMatchMockData(list.First().FirstName.ToString(), list.First().LastName.ToString());
             EnsureStreamIsNotDisposeAndIsAtEndOfStream(stream);
         }
 
 
-        private void EnsureFirstNameAndLastNameMatchMockData(string firstName,string lastName)
+        private void EnsureFirstNameAndLastNameMatchMockData(string firstName, string lastName)
         {
             if (firstName.Equals(MockData.Employee.FirstName) && lastName.Equals(MockData.Employee.LastName))
             {
@@ -272,11 +272,12 @@ namespace DotNetHelper.Serialization.Json.Tests
                 {
                     Assert.Fail("The entire stream has not been read");
                 }
-            }catch(ObjectDisposedException disposedException)
+            }
+            catch (ObjectDisposedException disposedException)
             {
                 Assert.Fail($"The stream has been disposed {disposedException.Message}");
             }
-            
+
         }
 
 
@@ -290,10 +291,10 @@ namespace DotNetHelper.Serialization.Json.Tests
             catch (ObjectDisposedException)
             {
                 return;
-            }           
+            }
         }
 
- 
+
 
 
     }

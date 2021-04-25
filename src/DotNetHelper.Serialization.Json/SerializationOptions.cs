@@ -8,16 +8,16 @@ using DotNetHelper.Serialization.Json.Converters;
 
 namespace DotNetHelper.Serialization.Json
 {
-	public static class JsonHelper
-	{
-		public static JsonSerializerOptions DefaultOptions => new JsonSerializerOptions()
-		{
-			PropertyNameCaseInsensitive = true,
-			WriteIndented = false,
-			PropertyNamingPolicy = null,
-			Converters = { new Int32Converter(), new DecimalConverter(), new LongToStringConverter(), new JsonStringEnumConverter() }
-		};
-	}
+    public static class JsonHelper
+    {
+        public static JsonSerializerOptions DefaultOptions => new JsonSerializerOptions()
+        {
+            PropertyNameCaseInsensitive = true,
+            WriteIndented = false,
+            PropertyNamingPolicy = null,
+            Converters = { new Int32Converter(), new DecimalConverter(), new LongToStringConverter(), new JsonStringEnumConverter() }
+        };
+    }
 }
 
 #endif

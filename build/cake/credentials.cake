@@ -9,20 +9,21 @@ public class BuildCredentials
     public RubyGemCredentials RubyGem { get; private set; }
     public CodeCovCredentials CodeCov { get; private set; }
 
-    public static BuildCredentials GetCredentials(ICakeContext context)
-    {
-        return new BuildCredentials
-        {
-            GitHub     = GitHubCredentials.GetGitHubCredentials(context),
-            Gitter     = GitterCredentials.GetGitterCredentials(context),
-            Docker     = DockerHubCredentials.GetDockerHubCredentials(context),
-            Nuget      = NugetCredentials.GetNugetCredentials(context),
-            Chocolatey = ChocolateyCredentials.GetChocolateyCredentials(context),
-            Tfx        = TfxCredentials.GetTfxCredentials(context),
-            RubyGem    = RubyGemCredentials.GetRubyGemCredentials(context),
-            CodeCov    = CodeCovCredentials.GetCodeCovCredentials(context),
-        };
+
+    public BuildCredentials(ICakeContext context){  
+        
+            GitHub     = GitHubCredentials.GetGitHubCredentials(context);
+            Gitter     = GitterCredentials.GetGitterCredentials(context);
+            Docker     = DockerHubCredentials.GetDockerHubCredentials(context);
+            Nuget      = NugetCredentials.GetNugetCredentials(context);
+            Chocolatey = ChocolateyCredentials.GetChocolateyCredentials(context);
+            Tfx        = TfxCredentials.GetTfxCredentials(context);
+            RubyGem    = RubyGemCredentials.GetRubyGemCredentials(context);
+            CodeCov    = CodeCovCredentials.GetCodeCovCredentials(context);
+
     }
+   
+
 }
 
 public class GitHubCredentials

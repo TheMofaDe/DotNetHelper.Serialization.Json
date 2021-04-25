@@ -42,19 +42,20 @@ namespace DotNetHelper.Serialization.Json
         public dynamic Deserialize(string json)
         {
             json.IsNullThrow(nameof(json));
-            return JsonSerializer.Deserialize<ExpandoObject>(json,Settings);
+            return JsonSerializer.Deserialize<ExpandoObject>(json, Settings);
         }
 
-        public dynamic Deserialize(Stream stream, int bufferSize = 1024, bool leaveStreamOpen = false)  
+        public dynamic Deserialize(Stream stream, int bufferSize = 1024, bool leaveStreamOpen = false)
         {
             stream.IsNullThrow(nameof(stream));
-            using (var sr = new StreamReader(stream,Encoding,false,bufferSize,leaveStreamOpen)){
-              // https://github.com/dotnet/runtime/issues/1574
-            var obj = JsonSerializer.DeserializeAsync<ExpandoObject>(stream, Settings)
-                .ConfigureAwait(false)
-                .GetAwaiter()
-                .GetResult();
-            return obj;
+            using (var sr = new StreamReader(stream, Encoding, false, bufferSize, leaveStreamOpen))
+            {
+                // https://github.com/dotnet/runtime/issues/1574
+                var obj = JsonSerializer.DeserializeAsync<ExpandoObject>(stream, Settings)
+                    .ConfigureAwait(false)
+                    .GetAwaiter()
+                    .GetResult();
+                return obj;
             }
         }
 
@@ -70,7 +71,7 @@ namespace DotNetHelper.Serialization.Json
             // https://github.com/dotnet/runtime/issues/1574
             var obj = JsonSerializer.DeserializeAsync<T>(stream, Settings).ConfigureAwait(false).GetAwaiter()
                 .GetResult();
-            if(!leaveStreamOpen)
+            if (!leaveStreamOpen)
                 stream.Dispose();
             return obj;
         }
@@ -86,7 +87,7 @@ namespace DotNetHelper.Serialization.Json
         {
             stream.IsNullThrow(nameof(stream));
             // https://github.com/dotnet/runtime/issues/1574
-            var obj = JsonSerializer.DeserializeAsync(stream,type,Settings).ConfigureAwait(false).GetAwaiter()
+            var obj = JsonSerializer.DeserializeAsync(stream, type, Settings).ConfigureAwait(false).GetAwaiter()
                 .GetResult();
             if (!leaveStreamOpen)
                 stream.Dispose();
@@ -99,7 +100,7 @@ namespace DotNetHelper.Serialization.Json
             obj.IsNullThrow(nameof(obj));
             stream.IsNullThrow(nameof(stream));
             JsonSerializer.SerializeAsync<T>(stream, obj, Settings).ConfigureAwait(false).GetAwaiter().GetResult();
-            if(leaveStreamOpen is false)
+            if (leaveStreamOpen is false)
                 stream?.Dispose();
         }
 
@@ -107,7 +108,7 @@ namespace DotNetHelper.Serialization.Json
         {
             obj.IsNullThrow(nameof(obj));
             JsonSerializer.SerializeAsync(stream, obj, Settings).ConfigureAwait(false).GetAwaiter().GetResult();
-            if(leaveStreamOpen is false)
+            if (leaveStreamOpen is false)
                 stream?.Dispose();
         }
 
@@ -123,7 +124,7 @@ namespace DotNetHelper.Serialization.Json
         {
             obj.IsNullThrow(nameof(obj));
             var stream = new MemoryStream();
-            JsonSerializer.SerializeAsync(stream,obj,Settings).ConfigureAwait(false).GetAwaiter().GetResult();
+            JsonSerializer.SerializeAsync(stream, obj, Settings).ConfigureAwait(false).GetAwaiter().GetResult();
             return stream;
         }
 
@@ -134,7 +135,7 @@ namespace DotNetHelper.Serialization.Json
 
         public string SerializeToString<T>(T obj) where T : class
         {
-           return JsonSerializer.Serialize<T>(obj, Settings);
+            return JsonSerializer.Serialize<T>(obj, Settings);
         }
 
         public List<dynamic> DeserializeToList(string json)
@@ -153,7 +154,7 @@ namespace DotNetHelper.Serialization.Json
             var list = JsonSerializer.DeserializeAsync<List<ExpandoObject>>(stream, Settings).ConfigureAwait(false).GetAwaiter()
                 .GetResult();
 
-            if(leaveStreamOpen is false)
+            if (leaveStreamOpen is false)
                 stream?.Dispose();
 
             var dynamicList = new List<dynamic>();
@@ -182,7 +183,7 @@ namespace DotNetHelper.Serialization.Json
         {
             json.IsNullThrow(nameof(json));
             // https://github.com/dotnet/runtime/issues/1574
-            var list = JsonSerializer.Deserialize(json, type,Settings);
+            var list = JsonSerializer.Deserialize(json, type, Settings);
             if (list is IEnumerable<object> listOfObjects)
             {
                 return listOfObjects.AsList();
@@ -195,9 +196,9 @@ namespace DotNetHelper.Serialization.Json
             stream.IsNullThrow(nameof(stream));
             // https://github.com/dotnet/runtime/issues/1574
             // https://github.com/dotnet/runtime/issues/31274
-            var list = JsonSerializer.DeserializeAsync(stream,type, Settings).ConfigureAwait(false).GetAwaiter()
+            var list = JsonSerializer.DeserializeAsync(stream, type, Settings).ConfigureAwait(false).GetAwaiter()
                 .GetResult();
-            if(!leaveStreamOpen)
+            if (!leaveStreamOpen)
                 stream.Dispose();
             if (list is IEnumerable<object> listOfObjects)
             {
@@ -206,7 +207,7 @@ namespace DotNetHelper.Serialization.Json
             throw new InvalidOperationException($"Failed to DeserializeToList of type {type.FullName}");
         }
 
-   
+
 
     }
 }
