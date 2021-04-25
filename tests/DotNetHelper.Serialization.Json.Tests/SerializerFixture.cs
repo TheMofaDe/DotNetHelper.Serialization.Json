@@ -1,11 +1,7 @@
 using System;
-using System.Collections.Generic;
-using System.Dynamic;
 using System.IO;
-using System.Linq;
 using System.Text;
 using DotNetHelper.Serialization.Json.Tests.Models;
-using Newtonsoft.Json;
 using NUnit.Framework;
 
 namespace DotNetHelper.Serialization.Json.Tests
@@ -27,7 +23,12 @@ namespace DotNetHelper.Serialization.Json.Tests
         [OneTimeSetUp]
         public void RunBeforeAnyTests()
         {
-            DataSource = new DataSourceJson(Encoding.UTF8,new JsonSerializerSettings());
+#if NET452
+            DataSource = new DataSourceJson(Encoding.UTF8);
+#else
+            DataSource = new DataSourceJson(Encoding.UTF8, JsonHelper.DefaultOptions);
+#endif
+
         }
 
         [OneTimeTearDown]
@@ -70,6 +71,7 @@ namespace DotNetHelper.Serialization.Json.Tests
         {
             var stream = new MemoryStream();
             DataSource.SerializeToStream(MockData.Employee,stream,1024,true);
+            stream.Seek(0, SeekOrigin.Begin); 
             EnsureStreamMatchMockDataJson(stream,MockData.GetEmployeeAsStream(DataSource.Encoding));
             EnsureStreamIsNotDisposeAndIsAtEndOfStream(stream);
             stream.Seek(0, SeekOrigin.Begin);
@@ -124,7 +126,6 @@ namespace DotNetHelper.Serialization.Json.Tests
         [Test]
         public void Test_Serialize_Generic_List_To_Stream_And_Stream_Wont_Dispose()
         {
-
             var stream = Stream.Synchronized(DataSource.SerializeToStream(MockData.EmployeeList, 1024));
             EnsureStreamMatchMockDataJson(stream,MockData.GetEmployeeListAsStream(DataSource.Encoding));
             EnsureStreamIsNotDisposeAndIsAtEndOfStream(stream);
@@ -136,7 +137,6 @@ namespace DotNetHelper.Serialization.Json.Tests
         [Test]
         public void Test_Serialize_Generic_To_Stream_And_Stream_Is_Dispose()
         {
-
             var stream = DataSource.SerializeToStream(MockData.Employee, 1024);
             EnsureStreamMatchMockDataJson(stream, MockData.GetEmployeeAsStream(DataSource.Encoding));
             EnsureStreamIsNotDisposeAndIsAtEndOfStream(stream);
@@ -158,7 +158,6 @@ namespace DotNetHelper.Serialization.Json.Tests
         [Test]
         public void Test_Serialize_Object_To_Stream_And_Stream_Is_Dispose()
         {
-
             var stream = DataSource.SerializeToStream(MockData.Employee, MockData.Employee.GetType(),1024);
             EnsureStreamMatchMockDataJson(stream, MockData.GetEmployeeAsStream(DataSource.Encoding));
             EnsureStreamIsNotDisposeAndIsAtEndOfStream(stream);
@@ -239,8 +238,6 @@ namespace DotNetHelper.Serialization.Json.Tests
             //    if (aByte.CompareTo(bByte) != 0)
             //        return false;
             //}
-
-            return true;
         }
     }
 }

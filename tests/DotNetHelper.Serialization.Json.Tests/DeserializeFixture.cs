@@ -1,11 +1,9 @@
 using System;
 using System.Collections.Generic;
-using System.Dynamic;
 using System.IO;
 using System.Linq;
 using System.Text;
 using DotNetHelper.Serialization.Json.Tests.Models;
-using Newtonsoft.Json;
 using NUnit.Framework;
 
 namespace DotNetHelper.Serialization.Json.Tests
@@ -27,7 +25,12 @@ namespace DotNetHelper.Serialization.Json.Tests
         [OneTimeSetUp]
         public void RunBeforeAnyTests()
         {
-            DataSource = new DataSourceJson(Encoding.UTF8,new JsonSerializerSettings());
+#if NET452
+             DataSource = new DataSourceJson(Encoding.UTF8);
+#else
+            DataSource = new DataSourceJson(Encoding.UTF8, JsonHelper.DefaultOptions);
+#endif
+
         }
 
         [OneTimeTearDown]
